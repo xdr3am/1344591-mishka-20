@@ -62,7 +62,244 @@
       <!-- /.main-nav -->
     </header>
 
-    <main class="page-main"></main>
+    <main class="page-main">
+      <section class="product-order">
+        <div class="product-order__wrapper">
+          <h1 class="product-order__title">Вязание на заказ</h1>
+          <p class="product-order__text">
+            Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
+            форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+          </p>
+          <form
+            class="product-order__form form"
+            action="https://echo.htmlacademy.ru"
+            method="get"
+          >
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Тип</legend>
+              <ul class="form__list input-list">
+                <li class="input-list__item input-item">
+                  <input
+                    class="input-item__input-radio"
+                    type="radio"
+                    name="type-product"
+                    id="accessory"
+                    value="accessory"
+                    checked
+                  />
+                  <label class="input-item__label" for="accessory"
+                    >Аксессуар для интерьера</label
+                  >
+                </li>
+                <!-- /.input-list__item input-item -->
+                <li class="input-list__item input-item">
+                  <input
+                    class="input-item__input-radio"
+                    type="radio"
+                    name="type-product"
+                    id="toy"
+                    value="toy"
+                  />
+                  <label class="input-item__label" for="toy"
+                    >Детская игрушка</label
+                  >
+                </li>
+                <!-- /.input-list__item input-item -->
+              </ul>
+              <!-- /.form__list input-list -->
+            </fieldset>
+            <!-- /.form__fieldset -->
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Цвет</legend>
+              <ul class="form__list input-list">
+                <li class="input-list__item input-item">
+                  <input
+                    class="input-item__input-checkbox"
+                    type="checkbox"
+                    name="color-white"
+                    id="color-white"
+                    checked
+                  />
+                  <label class="input-item__label" for="color-white"
+                    >Белый</label
+                  >
+                </li>
+                <!-- /.input-list__item input-item -->
+                <li class="input-list__item input-item">
+                  <input
+                    class="input-item__input-checkbox"
+                    type="checkbox"
+                    name="color-gray"
+                    id="color-gray"
+                    checked
+                  />
+                  <label class="input-item__label" for="color-gray"
+                    >Серый</label
+                  >
+                </li>
+                <!-- /.input-list__item input-item -->
+                <li class="input-list__item input-item">
+                  <input
+                    class="input-item__input-checkbox"
+                    type="checkbox"
+                    name="color-tiffani"
+                    id="color-tiffani"
+                  />
+                  <label class="input-item__label" for="color-tiffani"
+                    >«Тиффани»</label
+                  >
+                </li>
+                <!-- /.input-list__item input-item -->
+                <li class="input-list__item input-item">
+                  <input
+                    class="input-item__input-checkbox"
+                    type="checkbox"
+                    name="color-black"
+                    id="color-black"
+                  />
+                  <label class="input-item__label" for="color-black"
+                    >Черный</label
+                  >
+                </li>
+                <!-- /.input-list__item input-item -->
+                <li class="input-list__item input-item">
+                  <input
+                    class="input-item__input-checkbox"
+                    type="checkbox"
+                    name="color-pink"
+                    id="color-pink"
+                  />
+                  <label class="input-item__label" for="color-pink"
+                    >Розовый</label
+                  >
+                </li>
+                <!-- /.input-list__item input-item -->
+                <li class="input-list__item input-item">
+                  <input
+                    class="input-item__input-checkbox"
+                    type="checkbox"
+                    name="color-orange"
+                    id="color-orange"
+                  />
+                  <label class="input-item__label" for="color-orange"
+                    >Оранжевый</label
+                  >
+                </li>
+                <!-- /.input-list__item input-item -->
+              </ul>
+              <!-- /.form__list input-list -->
+            </fieldset>
+            <!-- /.form__fieldset -->
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">ФИО</legend>
+              <ul class="form__list input-list">
+                <li class="input-list__item input-item">
+                  <label class="input-item__label" for="name">Имя:</label>
+                  <input
+                    class="input-item__input-text"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Введите ваше имя*"
+                    required
+                  />
+                </li>
+                <!-- /.input-list__item input-item -->
+                <li class="input-list__item input-item">
+                  <label class="input-item__label" for="surname"
+                    >Фамилия:</label
+                  >
+                  <input
+                    class="input-item__input-text"
+                    type="text"
+                    name="surname"
+                    id="surname"
+                    placeholder="Укажите фамилию*"
+                    required
+                  />
+                </li>
+                <!-- /.input-list__item input-item -->
+                <li class="input-list__item input-item">
+                  <label class="input-item__label" for="patronymic"
+                    >Отчество:</label
+                  >
+                  <input
+                    class="input-item__input-text"
+                    type="text"
+                    name="patronymic"
+                    id="patronymic"
+                    placeholder="Отчество, если желаете"
+                  />
+                </li>
+                <!-- /.input-list__item input-item -->
+              </ul>
+              <!-- /.form__list input-list -->
+            </fieldset>
+            <!-- /.form__fieldset -->
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Тел</legend>
+              <ul class="form__list input-list">
+                <li class="input-list__item input-item">
+                  <input
+                    class="input-item__input-tel"
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    placeholder="+7 XXX XXX XX XX*"
+                    pattern="+7[0-9]{10}"
+                    required
+                  />
+                  <label class="input-item__label" for="tel"></label>
+                </li>
+                <!-- /.input-list__item input-item -->
+              </ul>
+            </fieldset>
+            <!-- /.form__fieldset -->
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">E-mail</legend>
+              <ul class="form__list input-list">
+                <li class="input-list__item input-item">
+                  <input
+                    class="input-item__input-mail"
+                    type="mail"
+                    name="mail"
+                    id="mail"
+                    placeholder="Ваш Email*"
+                    required
+                  />
+                  <label class="input-item__label" for="mail"></label>
+                </li>
+                <!-- /.input-list__item input-item -->
+              </ul>
+            </fieldset>
+            <!-- /.form__fieldset -->
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Доп</legend>
+              <ul class="form__list input-list">
+                <li class="input-list__item input-item">
+                  <textarea
+                    class="input-item__textarea"
+                    name="text"
+                    id="text"
+                    placeholder="Опишите все ваши пожелания к заказу"
+                  ></textarea>
+                  <label class="input-item__label" for="textarea"></label>
+                </li>
+                <!-- /.input-list__item input-item -->
+              </ul>
+            </fieldset>
+            <!-- /.form__fieldset -->
+            <span class="form__hint">*Поля обязательны для заполнения</span>
+            <button class="form__button button" type="submit">
+              Отправить заказ
+            </button>
+          </form>
+          <!-- /.product-order__form form -->
+        </div>
+        <!-- /.product-order__wrapper -->
+      </section>
+      <!-- /.product-order -->
+    </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
