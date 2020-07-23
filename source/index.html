@@ -8,7 +8,6 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -28,19 +27,19 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="catalog.html">Каталог товаров</a>
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
             </li>
             <!-- /.site-list__item -->
             <li class="site-list__item">
-              <a href="form.html">Вязание на заказ</a>
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
             </li>
             <!-- /.site-list__item -->
             <li class="site-list__item">
-              <a href="form.html">Поиск по сайту</a>
+              <a class="site-list__link" href="#">Поиск по сайту</a>
             </li>
             <!-- /.site-list__item -->
             <li class="site-list__item">
-              <a href="#">Корзина: пока пуста</a>
+              <a class="site-list__link" href="#">Корзина: пока пуста</a>
             </li>
             <!-- /.site-list__item -->
           </ul>
@@ -61,8 +60,16 @@
             Милые штучки ручной работы для дома
           </h2>
           <ul class="promo__list">
-            <li class="promo__item"><a href="#">Предметы интерьера</a></li>
-            <li class="promo__item"><a href="#">Детские игрушки</a></li>
+            <li class="promo__item">
+              <a class="promo__link promo__link--link-1" href="#"
+                >Предметы интерьера</a
+              >
+            </li>
+            <li class="promo__item">
+              <a class="promo__link promo__link--link-2" href="#"
+                >Детские игрушки</a
+              >
+            </li>
           </ul>
         </div>
         <!-- /.promo__wrapper -->
@@ -86,7 +93,7 @@
           </dl>
           <img
             class="product-week__img"
-            src="img/product-week-mobile.jpg"
+            src="img/triple-set-mobile@1x.jpg"
             alt="вязанные корзинки"
             width="260"
             height="315"
@@ -168,9 +175,10 @@
             <!-- /.table__row -->
           </table>
           <!-- /.contacts__table table -->
-          <iframe class="contacts__map"
+          <iframe
+            class="contacts__map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716070596!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1594982001428!5m2!1sru!2sru"
-            width="322"
+            width="320"
             height="457"
             allowfullscreen=""
             aria-hidden="false"
@@ -190,7 +198,7 @@
             <li class="social__item">
               <a class="social__link" href="#"
                 ><img
-                  src="img/instagram.svg"
+                  src="img/icon-insta.svg"
                   alt="instagram"
                   width="22"
                   height="21"
@@ -200,7 +208,7 @@
             <li class="social__item">
               <a class="social__link" href="#"
                 ><img
-                  src="img/facebook.svg"
+                  src="img/icon-fb.svg"
                   alt="facebook"
                   width="15"
                   height="28"
@@ -210,7 +218,7 @@
             <li class="social__item">
               <a class="social__link" href="#"
                 ><img
-                  src="img/twitter.svg"
+                  src="img/icon-twitter.svg"
                   alt="twitter"
                   width="23"
                   height="20"
@@ -225,7 +233,7 @@
           <span class="copy__text">Разработано</span>
           <a href="https://htmlacademy.ru/intensive/adaptive" class="copy__link"
             ><img
-              src="img/htmlacademy-logo.svg"
+              src="img/logo-htmlacademy.svg"
               alt="логотип компании Html Academy"
               width="27"
               height="34"

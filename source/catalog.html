@@ -8,7 +8,6 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -28,19 +27,19 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="catalog.html">Каталог товаров</a>
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
             </li>
             <!-- /.site-list__item -->
             <li class="site-list__item">
-              <a href="form.html">Вязание на заказ</a>
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
             </li>
             <!-- /.site-list__item -->
             <li class="site-list__item">
-              <a href="form.html">Поиск по сайту</a>
+              <a class="site-list__link" href="#">Поиск по сайту</a>
             </li>
             <!-- /.site-list__item -->
             <li class="site-list__item">
-              <a href="#">Корзина: пока пуста</a>
+              <a class="site-list__link" href="#">Корзина: пока пуста</a>
             </li>
             <!-- /.site-list__item -->
           </ul>
@@ -53,15 +52,17 @@
 
     <main class="page-main">
       <section class="catalog">
-        <div class="catalog__wrapper">
-          <h1 class="catalog__title">
+        <div class="page-title">
+          <h1 class="page-title__text">
             Каталог товаров
           </h1>
-          <ul class="catalog__list card-list">
-            <li class="card-list__item card">
+        </div>
+        <div class="catalog__wrapper">
+          <ul class="catalog__list">
+            <li class="catalog__item card">
               <img
                 class="card__image"
-                src="img/card-1.jpg"
+                src="img/photo-hare-mobile@1x.jpg"
                 alt="зайчик-попрыгайчик"
               />
               <h2 class="card__title">
@@ -70,11 +71,11 @@
               <span class="card__specifications">Рост 30 см, вес 200 г</span>
               <p class="card__price">1 200 руб.</p>
             </li>
-            <!-- /.card-list__item -->
-            <li class="card-list__item card">
+            <!-- /.catalog__item card -->
+            <li class="catalog__item card">
               <img
                 class="card__image"
-                src="img/card-2.jpg"
+                src="img/photo-bowl-mobile@1x.jpg"
                 alt="корзинка для белья"
               />
               <h2 class="card__title">
@@ -85,11 +86,11 @@
               >
               <p class="card__price">690 руб.</p>
             </li>
-            <!-- /.card-list__item -->
-            <li class="card-list__item card">
+            <!-- /.catalog__item card -->
+            <li class="catalog__item card">
               <img
                 class="card__image"
-                src="img/card-3.jpg"
+                src="img/photo-toys-mobile@1x.jpg"
                 alt="большая корзинка для игрушек"
               />
               <h2 class="card__title">
@@ -100,9 +101,9 @@
               >
               <p class="card__price">1 500 руб.</p>
             </li>
-            <!-- /.card-list__item -->
+            <!-- /.catalog__item card -->
           </ul>
-          <!-- /.catalog__list card-list -->
+          <!-- /.catalog__list -->
         </div>
         <!-- /.catalog__wrapper -->
       </section>
@@ -111,7 +112,12 @@
         <div class="production__wrapper">
           <h2 class="production__title">Процесс производства</h2>
           <div class="production__video video">
-            <video class="video__content" width="260" height="150" poster="img/video-production.jpg"></video>
+            <video
+              class="video__content"
+              width="260"
+              height="150"
+              poster="img/video-production.jpg"
+            ></video>
             <button class="video__button button-play">Play</button>
           </div>
           <p class="production__text">
@@ -132,7 +138,7 @@
             <li class="social__item">
               <a class="social__link" href="#"
                 ><img
-                  src="img/instagram.svg"
+                  src="img/icon-insta.svg"
                   alt="instagram"
                   width="22"
                   height="21"
@@ -142,7 +148,7 @@
             <li class="social__item">
               <a class="social__link" href="#"
                 ><img
-                  src="img/facebook.svg"
+                  src="img/icon-fb.svg"
                   alt="facebook"
                   width="15"
                   height="28"
@@ -152,7 +158,7 @@
             <li class="social__item">
               <a class="social__link" href="#"
                 ><img
-                  src="img/twitter.svg"
+                  src="img/icon-twitter.svg"
                   alt="twitter"
                   width="23"
                   height="20"
@@ -167,7 +173,7 @@
           <span class="copy__text">Разработано</span>
           <a href="https://htmlacademy.ru/intensive/adaptive" class="copy__link"
             ><img
-              src="img/htmlacademy-logo.svg"
+              src="img/logo-htmlacademy.svg"
               alt="логотип компании Html Academy"
               width="27"
               height="34"
