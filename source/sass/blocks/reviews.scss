@@ -1,0 +1,44 @@
+.reviews__title {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: $black;
+}
+
+.reviews__author {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: $black;
+}
+
+.reviews__author-nickname {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.reviews__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviews__nav-button {
+  width: 130px;
+  height: 52px;
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.reviews__nav-button--previous {
+  background-image: url("../../img/icon-left-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.reviews__nav-button--next {
+  background-image: url("../../img/icon-right-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}

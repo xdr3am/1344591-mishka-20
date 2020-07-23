@@ -1,3 +1,8 @@
+$black: #000000;
+$extra-dark-gray: #444444;
+$green: #62d1ba;
+$gray: #f1f1f1;
+
 @import "../sass/blocks/page-body.scss";
 @import "../sass/blocks/visually-hidden.scss";
 @import "../sass/blocks/site-list.scss";
@@ -5,9 +10,17 @@
 @import "../sass/blocks/product-week.scss";
 @import "../sass/blocks/button.scss";
 @import "../sass/blocks/about-company.scss";
+@import "../sass/blocks/reviews.scss";
+@import "../sass/blocks/contacts.scss";
+@import "../sass/blocks/table.scss";
 @import "../sass/blocks/social.scss";
 @import "../sass/blocks/copy.scss";
 @import "../sass/blocks/page-title.scss";
 @import "../sass/blocks/catalog.scss";
 @import "../sass/blocks/card";
+@import "../sass/blocks/production.scss";
+@import "../sass/blocks/video.scss";
+@import "../sass/blocks/product-order.scss";
+@import "../sass/blocks/form.scss";
+@import "../sass/blocks/input.scss";
 @import "../sass/blocks/page-footer.scss";
