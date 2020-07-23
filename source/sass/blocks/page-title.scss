@@ -1,6 +1,6 @@
 .page-title {
   min-height: 177px;
-  background-color: #F1F1F1;
+  background-color: $gray;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,5 +11,5 @@
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
-  color: #000000;
+  color: $black;
 }

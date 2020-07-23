@@ -1,0 +1,25 @@
+.form__fieldset {
+  border: none;
+}
+
+.form__legend {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $green;
+}
+
+.form__list {
+  list-style: none;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  color: $black;
+}
+
+.form__hint {
+  font-size: 14px;
+  line-height: 16px;
+  color: $extra-dark-gray;
+}

@@ -7,7 +7,7 @@
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
-  color: #000000;
+  color: $black;
 }
 
 .product-week__subtitle {
@@ -15,7 +15,7 @@
   font-size: 17px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #63D1BB;
+  color: $green;
 }
 
 .product-week__price {
@@ -23,4 +23,4 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
-} 
+}

@@ -9,7 +9,7 @@
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
-  color: #010000;
+  color: $black;
 }
 
 .promo__list {
@@ -26,7 +26,7 @@
   color: #ffffff;
 
   &--link-1 {
-    background-color: #63d1bb;
+    background-color: $green;
   }
 
   &--link-2 {
