@@ -7,7 +7,7 @@
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
-  color: $green;
+  color: $decoration-color;
 }
 
 .form__list {
@@ -15,11 +15,11 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
-  color: $black;
+  color: $dark-color-text;
 }
 
 .form__hint {
   font-size: 14px;
   line-height: 16px;
-  color: $extra-dark-gray;
+  color: $base-color-text;
 }
