@@ -5,6 +5,17 @@
   font-size: 15px;
   line-height: 30px;
   color: $base-color-text;
-  max-width: 320px;
+  min-width: 320px;
+  min-height: 100%;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    min-width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1050px;
+  }
 }

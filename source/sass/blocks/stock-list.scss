@@ -1,0 +1,23 @@
+.stock-list {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    order: 3;
+  }
+}
+
+.stock-list__item {
+  margin-right: 20px;
+}
+
+.stock-list__link {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: $dark-color-text;
+  text-decoration: none;
+}

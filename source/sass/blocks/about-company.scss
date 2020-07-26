@@ -1,3 +1,19 @@
+.about-company__wrapper {
+  width: 260px;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    padding: 0 50px;
+  }
+}
+
 .about-company__title {
   font-weight: bold;
   font-size: 25px;
@@ -6,9 +22,16 @@
 }
 
 .about-company__list {
+  display: grid;
+  grid-template-columns: 1fr;
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+  }
 }
 
 .about-company__item {
@@ -17,4 +40,14 @@
   line-height: 20px;
   color: $dark-color-text;
   margin-bottom: 83px;
+
+  &--item-2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  &--item-3 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
 }

@@ -4,28 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Мишка</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body class="page-body">
     <header class="page-header">
-      <a class="page-header__logo"
-        ><img
-          src="img/mishka-logo-mobile.svg"
-          alt="логотип интернет-магазина Мишка"
-          width="86"
-          height="35"
-      /></a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+      <div class="page-header__wrapper">
+        <nav class="main-nav">
+          <a class="main-nav__logo" href="index.html"><img src="img/mishka-logo-mobile.svg"
+              alt="логотип интернет-магазина Мишка" width="86" height="35" /></a>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__site-list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="catalog.html">Каталог товаров</a>
             </li>
@@ -34,20 +25,34 @@
               <a class="site-list__link" href="form.html">Вязание на заказ</a>
             </li>
             <!-- /.site-list__item -->
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Поиск по сайту</a>
-            </li>
-            <!-- /.site-list__item -->
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Корзина: пока пуста</a>
-            </li>
-            <!-- /.site-list__item -->
           </ul>
-          <!-- /.main-nav__list -->
-        </div>
-        <!-- /.main-nav__wrapper -->
-      </nav>
-      <!-- /.main-nav -->
+          <!-- /.main-nav__site-list site-list -->
+          <ul class="main-nav__user-list user-list">
+            <li class="user-list__item">
+              <a class="user-list__link" href="#">Поиск по сайту</a>
+            </li>
+            <!-- /.user-list__item -->
+            <li class="user-list__item">
+              <a class="user-list__link" href="#">Корзина: пока пуста</a>
+            </li>
+            <!-- /.user-list__item -->
+          </ul>
+          <!-- /.main-nav__user-list user-list -->
+          <ul class="main-nav__stock-list stock-list">
+            <li class="stock-list__item">
+              <a class="stock-list__link" href="#">Новые поступления</a>
+            </li>
+            <!-- /.stock-list__item -->
+            <li class="stock-list__item">
+              <a class="stock-list__link" href="#">Распродажа</a>
+            </li>
+            <!-- /.stock-list__item -->
+          </ul>
+          <!-- /.main-nav__stock-list stock-list -->
+          <span class="main-nav__delivery">Бесплатная доставка по России</span>
+        </nav>
+        <!-- /.main-nav -->
+      </div>
     </header>
 
     <main class="page-main">
@@ -57,17 +62,20 @@
       <section class="promo">
         <div class="promo__wrapper">
           <h2 class="promo__title">
-            Милые штучки ручной работы для дома
+            Милые штучки ручной <br />
+            работы для дома
           </h2>
           <ul class="promo__list">
             <li class="promo__item">
               <a class="promo__link promo__link--link-1" href="#"
-                >Предметы интерьера</a
+                >Предметы <br />
+                интерьера</a
               >
             </li>
             <li class="promo__item">
               <a class="promo__link promo__link--link-2" href="#"
-                >Детские игрушки</a
+                >Детские <br />
+                игрушки</a
               >
             </li>
           </ul>
@@ -79,51 +87,53 @@
         <div class="product-week__wrapper">
           <h2 class="product-week__title">Вязанные корзинки</h2>
           <span class="product-week__subtitle">Товар недели</span>
-          <p class="product-week__description">
-            Экологически чистая пряжа, ручная работа. Доступны в шести
-            расцветках, и трех размерах.
-          </p>
-          <dl class="product-week__description-list description-list">
-            <dt class="description-list__term">Цвет:</dt>
-            <dd class="description-list__definition">«Тиффани»/серый</dd>
-            <dt class="description-list__term">Диаметр:</dt>
-            <dd class="description-list__definition">25 см</dd>
-            <dt class="description-list__term">Высота:</dt>
-            <dd class="description-list__definition">15 см</dd>
-          </dl>
-          <img
-            class="product-week__img"
-            src="img/triple-set-mobile@1x.jpg"
-            alt="вязанные корзинки"
-            width="260"
-            height="315"
-          />
-          <span class="product-week__price">Цена: 990 руб.</span>
-          <button class="product-week__button button">Заказать</button>
+          <div class="product-week__description-wrapper">
+            <p class="product-week__description">
+              Экологически чистая пряжа, ручная работа. Доступны в шести
+              расцветках, и трех размерах.
+            </p>
+            <dl class="product-week__description-list description-list">
+              <dt class="description-list__term">Цвет:</dt>
+              <dd class="description-list__definition">«Тиффани»/серый</dd>
+              <dt class="description-list__term">Диаметр:</dt>
+              <dd class="description-list__definition">25 см</dd>
+              <dt class="description-list__term">Высота:</dt>
+              <dd class="description-list__definition">15 см</dd>
+            </dl>
+            <img
+              class="product-week__img"
+              src="img/triple-set-mobile@1x.jpg"
+              alt="вязанные корзинки"
+              width="260"
+              height="315"
+            />
+            <span class="product-week__price">Цена: 990 руб.</span>
+            <button class="product-week__button button">Заказать</button>
+          </div>
         </div>
         <!-- /.product-week__wrapper -->
       </section>
       <!-- /.product-week -->
       <section class="about-company">
         <div class="about-company__wrapper">
-          <h2 class="about-company__title">Коротко о нас</h2>
+          <h2 class="about-company__title">Коротко о нас:</h2>
           <ul class="about-company__list">
-            <li class="about-company__item">
+            <li class="about-company__item about-company__item--item-1">
               Экологически чистые материалы
             </li>
-            <li class="about-company__item">
+            <li class="about-company__item about-company__item--item-2">
               Скандинавский стиль по российской цене
             </li>
-            <li class="about-company__item">
+            <li class="about-company__item about-company__item--item-3">
               Увеличивает лайки на фотографиях
             </li>
-            <li class="about-company__item">
+            <li class="about-company__item about-company__item--item-4">
               Связано вручную с любовью и умилением
             </li>
-            <li class="about-company__item">
+            <li class="about-company__item about-company__item--item-5">
               Поддержка отечественного производителя
             </li>
-            <li class="about-company__item">
+            <li class="about-company__item about-company__item--item-6">
               Поставляется в подарочной упаковке
             </li>
           </ul>
@@ -202,6 +212,11 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
+        <img
+          class="page-footer__logo"
+          src="img/logo-footer.svg"
+          alt="логотип интернет-магазина Мишка"
+        />
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">

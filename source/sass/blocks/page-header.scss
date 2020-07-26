@@ -1,0 +1,23 @@
+.page-header {
+  margin-top: 22px;
+}
+
+.page-header__wrapper {
+  width: 260px;
+  padding: 0 30px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    padding: 0 50px;
+  }
+}
