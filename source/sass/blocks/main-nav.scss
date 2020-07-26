@@ -1,0 +1,47 @@
+.main-nav {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.main-nav__logo {
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    order: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 10px;
+  right: 33px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__delivery {
+  display: none;
+  font-size: 15px;
+  line-height: 24px;
+  color: $base-color-text;
+  order: 3;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}

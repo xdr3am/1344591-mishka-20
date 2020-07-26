@@ -1,4 +1,4 @@
-.site-list {
+.user-list {
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -6,27 +6,22 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
+    order: 1;
     flex-direction: row;
-    order: 2;
+    margin-left: auto;
+    margin-right: 0;
   }
 
   @media (min-width: $desktop-width) {
-    order: 0;
-    margin-left: 0;
-    margin-right: auto;
+    order: 2;
   }
 }
 
-.site-list__item {
+.user-list__item {
   padding-left: 46px;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 0;
-    margin-right: 10px;
-  }
 }
 
-.site-list__link {
+.user-list__link {
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;

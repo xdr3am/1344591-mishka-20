@@ -1,3 +1,38 @@
 .page-footer {
-  background-color: $gray;
+  background-color: $bg-color;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 260px;
+  padding: 0 30px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    padding: 0 50px;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
+.page-footer__copy {
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+    margin-left: auto;
+  }
 }

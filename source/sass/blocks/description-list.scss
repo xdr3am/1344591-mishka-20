@@ -1,0 +1,21 @@
+.description-list {
+  display: grid;
+  width: 260px;
+  grid-template-columns: max-content auto;
+  border-collapse: collapse;
+  row-gap: 10px;
+  margin-bottom: 28px;
+}
+
+.description-list__term {
+  grid-column-start: 1;
+  border-bottom: 1px solid #ececec;
+}
+
+.description-list__definition {
+  grid-column-start: 2;
+  border-bottom: 1px solid #ececec;
+  margin: 0;
+  padding-left: 30px;
+  padding-bottom: 10px;
+}

@@ -1,12 +1,12 @@
 .input__input-text {
   border: none;
   outline: none;
-  box-shadow: inset 0 -2px 0 $black;
+  box-shadow: inset 0 -2px 0 #000000;
 
   &::placeholder {
     font-size: 17px;
     line-height: 18px;
-    color: $black;
+    color: $dark-color-text;
     opacity: 0.3;
   }
 }
@@ -14,12 +14,12 @@
 .input__input-tel {
   border: none;
   outline: none;
-  box-shadow: inset 0 -2px 0 $black;
+  box-shadow: inset 0 -2px 0 #000000;
 
   &::placeholder {
     font-size: 19px;
     line-height: 18px;
-    color: $black;
+    color: $dark-color-text;
     opacity: 0.3;
   }
 }
@@ -27,28 +27,28 @@
 .input__input-mail {
   border: none;
   outline: none;
-  box-shadow: inset 0 -2px 0 $black;
+  box-shadow: inset 0 -2px 0 #000000;
 
   &::placeholder {
     font-size: 17px;
     line-height: 18px;
-    color: $black;
+    color: $dark-color-text;
     opacity: 0.3;
   }
 }
 
 .input__textarea {
-  border: 2px solid $extra-dark-gray;
+  border: 2px solid #444444;
   box-sizing: border-box;
   width: 260px;
   height: 100px;
   resize: none;
 
   &::placeholder {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 17px;
     line-height: 18px;
-    color: $black;
+    color: $dark-color-text;
     opacity: 0.3;
   }
 }

@@ -1,32 +1,73 @@
 .promo {
-  min-height: 375px;
+  background-color: #fafafa;
   background-image: url("../../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  margin-bottom: 31px;
+}
+
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 506px;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
 }
 
 .promo__title {
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
-  color: $black;
-}
-
-.promo__list {
-  list-style: none;
-  margin: 0;
+  text-align: center;
+  color: $dark-color-text;
+  margin: 0 30px;
+  margin-top: 73px;
   padding: 0;
 }
 
+.promo__list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.promo__item {
+  width: 100%;
+}
+
 .promo__link {
+  display: block;
+  height: 103px;
   text-decoration: none;
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
   color: #ffffff;
+  padding-left: 30px;
+  padding-top: 24px;
+  box-sizing: border-box;
 
   &--link-1 {
-    background-color: $green;
+    background-color: $decoration-color;
   }
 
   &--link-2 {

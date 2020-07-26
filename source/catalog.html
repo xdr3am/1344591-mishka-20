@@ -4,50 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Мишка</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body class="page-body">
     <header class="page-header">
-      <a href="index.html" class="page-header__logo"
-        ><img
-          src="img/mishka-logo-mobile.svg"
-          alt="логотип интернет-магазина Мишка"
-          width="86"
-          height="35"
-      /></a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+      <div class="page-header__wrapper">
+        <nav class="main-nav">
+          <a class="main-nav__logo" href="index.html"
+            ><img
+              src="img/mishka-logo-mobile.svg"
+              alt="логотип интернет-магазина Мишка"
+              width="86"
+              height="35"
+          /></a>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__site-list site-list">
             <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+              <a class="site-list__link" href="catalog.html"
+                >Каталог товаров</a
+              >
             </li>
             <!-- /.site-list__item -->
             <li class="site-list__item">
               <a class="site-list__link" href="form.html">Вязание на заказ</a>
             </li>
             <!-- /.site-list__item -->
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Поиск по сайту</a>
-            </li>
-            <!-- /.site-list__item -->
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Корзина: пока пуста</a>
-            </li>
-            <!-- /.site-list__item -->
           </ul>
-          <!-- /.main-nav__list -->
-        </div>
-        <!-- /.main-nav__wrapper -->
-      </nav>
-      <!-- /.main-nav -->
+          <!-- /.main-nav__site-list site-list -->
+          <ul class="main-nav__user-list user-list">
+            <li class="user-list__item">
+              <a class="user-list__link" href="#">Поиск по сайту</a>
+            </li>
+            <!-- /.user-list__item -->
+            <li class="user-list__item">
+              <a class="user-list__link" href="#">Корзина: пока пуста</a>
+            </li>
+            <!-- /.user-list__item -->
+          </ul>
+          <!-- /.main-nav__user-list user-list -->
+          <ul class="main-nav__stock-list stock-list">
+            <li class="stock-list__item">
+              <a class="stock-list__link" href="#">Новые поступления</a>
+            </li>
+            <!-- /.stock-list__item -->
+            <li class="stock-list__item">
+              <a class="stock-list__link" href="#">Распродажа</a>
+            </li>
+            <!-- /.stock-list__item -->
+          </ul>
+          <!-- /.main-nav__stock-list stock-list -->
+          <span class="main-nav__delivery">Бесплатная доставка по России</span>
+        </nav>
+        <!-- /.main-nav -->
+      </div>
     </header>
 
     <main class="page-main">
@@ -65,11 +77,13 @@
                 src="img/photo-hare-mobile@1x.jpg"
                 alt="зайчик-попрыгайчик"
               />
-              <h2 class="card__title">
-                Зайчик-попрыгайчик
-              </h2>
-              <span class="card__specifications">Рост 30 см, вес 200 г</span>
-              <p class="card__price">1 200 руб.</p>
+              <div class="card__description">
+                <h2 class="card__title">
+                  Зайчик-попрыгайчик
+                </h2>
+                <span class="card__specifications">Рост 30 см, вес 200 г</span>
+                <p class="card__price">1 200 руб.</p>
+              </div>
             </li>
             <!-- /.catalog__item card -->
             <li class="catalog__item card">
@@ -78,13 +92,15 @@
                 src="img/photo-bowl-mobile@1x.jpg"
                 alt="корзинка для белья"
               />
-              <h2 class="card__title">
-                Корзинка для белья
-              </h2>
-              <span class="card__specifications"
-                >Диаметр 15 см, высота 10 см</span
-              >
-              <p class="card__price">690 руб.</p>
+              <div class="card__description">
+                <h2 class="card__title">
+                  Корзинка для белья
+                </h2>
+                <span class="card__specifications"
+                  >Диаметр 15 см, высота 10 см</span
+                >
+                <p class="card__price">690 руб.</p>
+              </div>
             </li>
             <!-- /.catalog__item card -->
             <li class="catalog__item card">
@@ -93,13 +109,15 @@
                 src="img/photo-toys-mobile@1x.jpg"
                 alt="большая корзинка для игрушек"
               />
-              <h2 class="card__title">
-                Большая корзинка для игрушек
-              </h2>
-              <span class="card__specifications"
-                >Диаметр 30 см, высота 30 см</span
-              >
-              <p class="card__price">1 500 руб.</p>
+              <div class="card__description">
+                <h2 class="card__title">
+                  Большая корзинка для игрушек
+                </h2>
+                <span class="card__specifications"
+                  >Диаметр 30 см, высота 30 см</span
+                >
+                <p class="card__price">1 500 руб.</p>
+              </div>
             </li>
             <!-- /.catalog__item card -->
           </ul>
@@ -166,36 +184,19 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
+        <img class="page-footer__logo" src="img/logo-footer.svg" alt="логотип интернет-магазина Мишка" />
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link" href="#"
-                ><img
-                  src="img/icon-insta.svg"
-                  alt="instagram"
-                  width="22"
-                  height="21"
-              /></a>
+              <a class="social__link" href="#"><img src="img/icon-insta.svg" alt="instagram" width="22" height="21" /></a>
             </li>
             <!-- /.social__item -->
             <li class="social__item">
-              <a class="social__link" href="#"
-                ><img
-                  src="img/icon-fb.svg"
-                  alt="facebook"
-                  width="15"
-                  height="28"
-              /></a>
+              <a class="social__link" href="#"><img src="img/icon-fb.svg" alt="facebook" width="15" height="28" /></a>
             </li>
             <!-- /.social__item -->
             <li class="social__item">
-              <a class="social__link" href="#"
-                ><img
-                  src="img/icon-twitter.svg"
-                  alt="twitter"
-                  width="23"
-                  height="20"
-              /></a>
+              <a class="social__link" href="#"><img src="img/icon-twitter.svg" alt="twitter" width="23" height="20" /></a>
             </li>
             <!-- /.social__item -->
           </ul>
@@ -204,13 +205,8 @@
         <!-- /.page-footer__social social -->
         <div class="page-footer__copy copy">
           <span class="copy__text">Разработано</span>
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="copy__link"
-            ><img
-              src="img/logo-htmlacademy.svg"
-              alt="логотип компании Html Academy"
-              width="27"
-              height="34"
-          /></a>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="copy__link"><img src="img/logo-htmlacademy.svg"
+              alt="логотип компании Html Academy" width="27" height="34" /></a>
         </div>
         <!-- /.page-footer__copy copy -->
       </div>
