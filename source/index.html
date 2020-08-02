@@ -11,8 +11,13 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <nav class="main-nav">
-          <a class="main-nav__logo" href="index.html"><img src="img/mishka-logo-mobile.svg"
-              alt="логотип интернет-магазина Мишка" width="86" height="35" /></a>
+          <a class="main-nav__logo" href="index.html"
+            ><img
+              src="img/mishka-logo-mobile.svg"
+              alt="логотип интернет-магазина Мишка"
+              width="86"
+              height="35"
+          /></a>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -150,17 +155,21 @@
             накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали
             более стильными, а также набирают больше лайков!
           </p>
-          <p class="reviews__author">Анастасия Красильникова</p>
-          <span class="reviews__author-nickname">@misssssiskras</span>
-          <div class="reviews__nav">
-            <button
-              class="reviews__nav-button reviews__nav-button--previous"
-              aria-label="Назад"
-            ></button>
-            <button
-              class="reviews__nav-button reviews__nav-button--next"
-              aria-label="Вперед"
-            ></button>
+          <div class="reviews__group-wrapper">
+            <div class="reviews__signature">
+              <p class="reviews__author">Анастасия Красильникова</p>
+              <span class="reviews__author-nickname">@misssssiskras</span>
+            </div>
+            <div class="reviews__nav">
+              <button
+                class="reviews__nav-button reviews__nav-button--previous"
+                aria-label="Назад"
+              ></button>
+              <button
+                class="reviews__nav-button reviews__nav-button--next"
+                aria-label="Вперед"
+              ></button>
+            </div>
           </div>
           <button class="reviews__button button">Написать</button>
         </div>
@@ -170,35 +179,29 @@
       <section class="contacts">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Контакты</h2>
-          <table class="contacts__table table">
-            <tr class="table__row">
-              <td class="table__data-1">
-                e-mail:
-              </td>
-              <td class="table__data-2">
-                <a class="table__link" href="mailto:info@mimimishkashop.ru"
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <span class="contacts__name">e-mail:</span>
+              <span class="contacts__address"
+                ><a class="contacts__link" href="mailto:info@mimimishkashop.ru"
                   >info@mimimishkashop.ru</a
-                >
-              </td>
-            </tr>
-            <!-- /.table__row -->
-            <tr class="table__row">
-              <td class="table__data-1">
-                адрес:
-              </td>
-              <td class="table__data-2">
-                г. Санкт-Петербург, ул.&nbsp;Большая&nbsp;Конюшенная,
-                д.&nbsp;19/8,&nbsp;офис&nbsp;101
-              </td>
-            </tr>
-            <!-- /.table__row -->
-          </table>
-          <!-- /.contacts__table table -->
+                ></span
+              >
+            </li>
+            <!-- /.contacts__item -->
+            <li class="contacts__item">
+              <span class="contacts__name">адрес:</span>
+              <span class="contacts__address"
+                >г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная,
+                д.&nbsp;19/8,&nbsp;офис&nbsp;101</span
+              >
+            </li>
+            <!-- /.contacts__item -->
+          </ul>
+          <!-- /.contacts__list -->
           <iframe
             class="contacts__map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716070596!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1594982001428!5m2!1sru!2sru"
-            width="320"
-            height="457"
             allowfullscreen=""
             aria-hidden="false"
             tabindex="0"
