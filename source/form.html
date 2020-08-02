@@ -65,13 +65,16 @@
             Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
             форму заказа и мы свяжемся с вами, чтобы уточнить детали.
           </p>
-          <form
-            class="product-order__form form"
-            action="https://echo.htmlacademy.ru"
-            method="get"
-          >
-            <fieldset class="form__fieldset">
-              <legend class="form__legend">Тип</legend>
+        </div>
+        <!-- /.product-order__wrapper -->
+        <form
+          class="product-order__form form"
+          action="https://echo.htmlacademy.ru"
+          method="get"
+        >
+          <div class="form__group">
+            <div class="form__group-wrapper">
+              <span class="form__group-title">Тип</span>
               <ul class="form__list">
                 <li class="form__item input">
                   <input
@@ -102,11 +105,14 @@
                 <!-- /.form__item input -->
               </ul>
               <!-- /.form__list -->
-            </fieldset>
-            <!-- /.form__fieldset -->
-            <fieldset class="form__fieldset">
-              <legend class="form__legend">Цвет</legend>
-              <ul class="form__list">
+            </div>
+            <!-- /.form__group-wrapper -->
+          </div>
+          <!-- /.form__group -->
+          <div class="form__group form__group--decoration">
+            <div class="form__group-wrapper">
+              <span class="form__group-title">Цвет</span>
+              <ul class="form__list form__list--checkbox-list">
                 <li class="form__item input">
                   <input
                     class="input__input-checkbox"
@@ -183,10 +189,13 @@
                 <!-- /.form__item input -->
               </ul>
               <!-- /.form__list -->
-            </fieldset>
-            <!-- /.form__fieldset -->
-            <fieldset class="form__fieldset">
-              <legend class="form__legend">ФИО</legend>
+            </div>
+            <!-- /.form__group-wrapper -->
+          </div>
+          <!-- /.form__group -->
+          <div class="form__group">
+            <div class="form__group-wrapper">
+              <span class="form__group-title">ФИО</span>
               <ul class="form__list">
                 <li class="form__item input">
                   <label class="input__label" for="name">Имя:</label>
@@ -229,10 +238,13 @@
                 <!-- /.form__item input -->
               </ul>
               <!-- /.form__list -->
-            </fieldset>
-            <!-- /.form__fieldset -->
-            <fieldset class="form__fieldset">
-              <legend class="form__legend">Тел</legend>
+            </div>
+            <!-- /.form__group-wrapper -->
+          </div>
+          <!-- /.form__group -->
+          <div class="form__group form__group--decoration">
+            <div class="form__group-wrapper">
+              <span class="form__group-title">Тел</span>
               <ul class="form__list">
                 <li class="form__item input">
                   <input
@@ -248,10 +260,14 @@
                 </li>
                 <!-- /.form__item input -->
               </ul>
-            </fieldset>
-            <!-- /.form__fieldset -->
-            <fieldset class="form__fieldset">
-              <legend class="form__legend">E-mail</legend>
+              <!-- /.form__list -->
+            </div>
+            <!-- /.form__group-wrapper -->
+          </div>
+          <!-- /.form__group -->
+          <div class="form__group form__group--decoration">
+            <div class="form__group-wrapper">
+              <span class="form__group-title">E-mail</span>
               <ul class="form__list">
                 <li class="form__item input">
                   <input
@@ -266,10 +282,14 @@
                 </li>
                 <!-- /.form__item input -->
               </ul>
-            </fieldset>
-            <!-- /.form__fieldset -->
-            <fieldset class="form__fieldset">
-              <legend class="form__legend">Доп</legend>
+              <!-- /.form__list -->
+            </div>
+            <!-- /.form__group-wrapper -->
+          </div>
+          <!-- /.form__group -->
+          <div class="form__group">
+            <div class="form__group-wrapper">
+              <span class="form__group-title">Доп</span>
               <ul class="form__list">
                 <li class="form__item input">
                   <textarea
@@ -282,16 +302,19 @@
                 </li>
                 <!-- /.form__item input -->
               </ul>
-            </fieldset>
-            <!-- /.form__fieldset -->
+              <!-- /.form__list -->
+            </div>
+            <!-- /.form__group-wrapper -->
+          </div>
+          <!-- /.form__group -->
+          <div class="form__group-wrapper form__group-wrapper--submit-button">
             <span class="form__hint">*Поля обязательны для заполнения</span>
             <button class="form__button button" type="submit">
               Отправить заказ
             </button>
-          </form>
-          <!-- /.product-order__form form -->
-        </div>
-        <!-- /.product-order__wrapper -->
+          </div>
+        </form>
+        <!-- /.product-order__form form -->
       </section>
       <!-- /.product-order -->
     </main>

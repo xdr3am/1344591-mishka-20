@@ -1,8 +1,35 @@
+.production__wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 260px;
+  padding: 0 30px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    width: 1050px;
+    padding: 0 50px;
+  }
+}
+
 .production__title {
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
   color: $dark-color-text;
+}
+
+.production__video {
+  @media (min-width: $tablet-width) {
+    grid-row: 1 / 4;
+  }
 }
 
 .production__text {

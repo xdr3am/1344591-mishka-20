@@ -31,6 +31,8 @@
 }
 
 .page-footer__copy {
+  margin: auto;
+
   @media (min-width: $tablet-width) {
     margin-right: 0;
     margin-left: auto;
