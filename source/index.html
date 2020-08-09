@@ -9,8 +9,11 @@
 
   <body class="page-body">
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <nav class="main-nav">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
           <a class="main-nav__logo" href="index.html"
             ><img
               src="img/mishka-logo-mobile.svg"
@@ -18,9 +21,6 @@
               width="86"
               height="35"
           /></a>
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
           <ul class="main-nav__site-list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="catalog.html">Каталог товаров</a>
@@ -34,10 +34,38 @@
           <!-- /.main-nav__site-list site-list -->
           <ul class="main-nav__user-list user-list">
             <li class="user-list__item">
+              <svg
+                class="user-list__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="17.6px"
+                height="17.6px"
+                viewBox="-0.8 -0.8 17.6 17.6"
+                enable-background="new -0.8 -0.8 17.6 17.6"
+                xml:space="preserve"
+              >
+                <path
+                  d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"
+                />
+              </svg>
               <a class="user-list__link" href="#">Поиск по сайту</a>
             </li>
             <!-- /.user-list__item -->
             <li class="user-list__item">
+              <svg
+                class="user-list__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="20.294px"
+                height="18.849px"
+                viewBox="264.205 370.961 20.294 18.849"
+                enable-background="new 264.205 370.961 20.294 18.849"
+                xml:space="preserve"
+              >
+                <path
+                  d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"
+                />
+              </svg>
               <a class="user-list__link" href="#">Корзина: пока пуста</a>
             </li>
             <!-- /.user-list__item -->
@@ -55,9 +83,10 @@
           </ul>
           <!-- /.main-nav__stock-list stock-list -->
           <span class="main-nav__delivery">Бесплатная доставка по России</span>
-        </nav>
-        <!-- /.main-nav -->
-      </div>
+        </div>
+        <!-- /.main-nav__wrapper -->
+      </nav>
+      <!-- /.main-nav -->
     </header>
 
     <main class="page-main">
@@ -67,18 +96,18 @@
       <section class="promo">
         <div class="promo__wrapper">
           <h2 class="promo__title">
-            Милые штучки ручной <br />
+            Милые штуки ручной <br />
             работы для дома
           </h2>
           <ul class="promo__list">
-            <li class="promo__item">
-              <a class="promo__link promo__link--link-1" href="#"
+            <li class="promo__item promo__item--item-1">
+              <a class="promo__link" href="#"
                 >Предметы <br />
                 интерьера</a
               >
             </li>
-            <li class="promo__item">
-              <a class="promo__link promo__link--link-2" href="#"
+            <li class="promo__item promo__item--item-2">
+              <a class="promo__link" href="#"
                 >Детские <br />
                 игрушки</a
               >
@@ -90,7 +119,7 @@
       <!-- /.promo -->
       <section class="product-week">
         <div class="product-week__wrapper">
-          <h2 class="product-week__title">Вязанные корзинки</h2>
+          <h2 class="product-week__title">Вязаные&nbsp;корзинки</h2>
           <span class="product-week__subtitle">Товар недели</span>
           <div class="product-week__description-wrapper">
             <p class="product-week__description">
@@ -124,22 +153,28 @@
           <h2 class="about-company__title">Коротко о нас:</h2>
           <ul class="about-company__list">
             <li class="about-company__item about-company__item--item-1">
-              Экологически чистые материалы
+              <img src="img/icon-feature-flower.svg" alt="иконка" class="about-company__img about-company__img--1">
+              <span class="about-company__text">Экологически чистые&nbsp;материалы</span>
             </li>
             <li class="about-company__item about-company__item--item-2">
-              Скандинавский стиль по российской цене
+              <img src="img/icon-feature-money.svg" alt="иконка" class="about-company__img about-company__img--2">
+              <span class="about-company__text">Скандинавский стиль по&nbsp;российской цене</span>
             </li>
             <li class="about-company__item about-company__item--item-3">
-              Увеличивает лайки на фотографиях
+              <img src="img/icon-feature-heart.svg" alt="иконка" class="about-company__img about-company__img--3">
+              <span class="about-company__text">Увеличивает лайки на&nbsp;фотографиях</span>
             </li>
             <li class="about-company__item about-company__item--item-4">
-              Связано вручную с любовью и умилением
+              <img src="img/icon-feature-ball.svg" alt="иконка" class="about-company__img about-company__img--4">
+              <span class="about-company__text">Связано вручную с любовью&nbsp;и&nbsp;умилением</span>
             </li>
             <li class="about-company__item about-company__item--item-5">
-              Поддержка отечественного производителя
+              <img src="img/icon-feature-rocket.svg" alt="иконка" class="about-company__img about-company__img--5">
+              <span class="about-company__text">Поддержка отечественного производителя</span>
             </li>
             <li class="about-company__item about-company__item--item-6">
-              Поставляется в подарочной упаковке
+              <img src="img/icon-feature-gift.svg" alt="иконка" class="about-company__img about-company__img--6">
+              <span class="about-company__text">Поставляется в подарочной&nbsp;упаковке</span>
             </li>
           </ul>
         </div>
@@ -178,27 +213,32 @@
       <!-- /.reviews -->
       <section class="contacts">
         <div class="contacts__wrapper">
-          <h2 class="contacts__title">Контакты</h2>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <span class="contacts__name">e-mail:</span>
-              <span class="contacts__address"
-                ><a class="contacts__link" href="mailto:info@mimimishkashop.ru"
-                  >info@mimimishkashop.ru</a
-                ></span
-              >
-            </li>
-            <!-- /.contacts__item -->
-            <li class="contacts__item">
-              <span class="contacts__name">адрес:</span>
-              <span class="contacts__address"
-                >г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная,
-                д.&nbsp;19/8,&nbsp;офис&nbsp;101</span
-              >
-            </li>
-            <!-- /.contacts__item -->
-          </ul>
-          <!-- /.contacts__list -->
+          <div class="contacts__wrapper-element">
+            <h2 class="contacts__title">Контакты</h2>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <span class="contacts__name">e-mail:</span>
+                <span class="contacts__address"
+                  ><a
+                    class="contacts__link"
+                    href="mailto:info@mimimishkashop.ru"
+                    >info@mimimishkashop.ru</a
+                  ></span
+                >
+              </li>
+              <!-- /.contacts__item -->
+              <li class="contacts__item">
+                <span class="contacts__name">адрес:</span>
+                <span class="contacts__address"
+                  >г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная,
+                  д.&nbsp;19/8,&nbsp;офис&nbsp;101</span
+                >
+              </li>
+              <!-- /.contacts__item -->
+            </ul>
+            <!-- /.contacts__list -->
+          </div>
+          <!-- /.contacts__wrapper-element -->
           <iframe
             class="contacts__map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716070596!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1594982001428!5m2!1sru!2sru"
@@ -206,9 +246,11 @@
             aria-hidden="false"
             tabindex="0"
           ></iframe>
-          <button class="contacts__button button">Напишите нам</button>
+          <div class="contacts__wrapper-element">
+            <button class="contacts__button button">Напишите нам</button>
+          </div>
+          <!-- /.contacts__wrapper-element -->
         </div>
-        <!-- /.contacts__wrapper -->
       </section>
       <!-- /.contacts -->
     </main>
@@ -270,5 +312,6 @@
       </div>
       <!-- /.page-footer__wrapper -->
     </footer>
+    <script src="js/main-nav.js"></script>
   </body>
 </html>

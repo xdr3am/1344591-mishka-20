@@ -3,12 +3,12 @@
   width: 260px;
   grid-template-columns: max-content auto;
   border-collapse: collapse;
-  row-gap: 10px;
-  margin-bottom: 28px;
+  box-sizing: border-box;
 }
 
 .description-list__term {
   grid-column-start: 1;
+  padding-top: 7px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -16,6 +16,7 @@
   grid-column-start: 2;
   border-bottom: 1px solid #ececec;
   margin: 0;
+  padding-top: 7px;
   padding-left: 30px;
   padding-bottom: 10px;
 }

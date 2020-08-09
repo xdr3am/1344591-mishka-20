@@ -4,6 +4,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     order: 1;
@@ -18,13 +19,50 @@
 }
 
 .user-list__item {
-  padding-left: 46px;
+  position: relative;
+  height: 79px;
+  border-top: 1px solid #ececec;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &:hover .user-list__icon,
+  &:focus .user-list__icon {
+    fill: $decoration-color;
+    opacity: 1;
+  }
+
+  &:active .user-list__icon {
+    opacity: 0.3;
+  }
+
+  &:hover .user-list__link,
+  &:focus .user-list__link {
+    opacity: 0.6;
+  }
+
+  &:active .user-list__link {
+    opacity: 0.3;
+  }
+}
+
+.user-list__icon {
+  position: absolute;
+  top: 29px;
+  left: calc(15px + 5%);
+  opacity: 0.2;
+  fill: #231f20;
 }
 
 .user-list__link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
   color: $dark-color-text;
   text-decoration: none;
+  padding-top: 28.5px;
+  padding-left: 24%;
+  box-sizing: border-box;
 }
