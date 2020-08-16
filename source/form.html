@@ -9,13 +9,18 @@
 
   <body class="page-body">
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <nav class="main-nav">
-          <a class="main-nav__logo" href="index.html"><img src="img/mishka-logo-mobile.svg"
-              alt="логотип интернет-магазина Мишка" width="86" height="35" /></a>
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <a class="main-nav__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+              <img src="img/mishka-logo-mobile.svg" alt="логотип интернет-магазина Мишка" />
+            </picture>
+          </a>
           <ul class="main-nav__site-list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="catalog.html">Каталог товаров</a>
@@ -28,12 +33,16 @@
           </ul>
           <!-- /.main-nav__site-list site-list -->
           <ul class="main-nav__user-list user-list">
-            <li class="user-list__item">
-              <a class="user-list__link" href="#">Поиск по сайту</a>
+            <li class="user-list__item user-list__item--search">
+              <img class="user-list__icon user-list__icon--search" src="img/icon-search.svg" alt="Иконка" width="17.6"
+                height="17.6" />
+              <a class="user-list__link user-list__link--search" href="#">Поиск по сайту</a>
             </li>
             <!-- /.user-list__item -->
-            <li class="user-list__item">
-              <a class="user-list__link" href="#">Корзина: пока пуста</a>
+            <li class="user-list__item user-list__item--cart">
+              <img class="user-list__icon user-list__icon--cart" src="img/icon-cart.svg" alt="Иконка" width="21"
+                height="18" />
+              <a class="user-list__link user-list__link--cart" href="#">Корзина: пока пуста</a>
             </li>
             <!-- /.user-list__item -->
           </ul>
@@ -50,9 +59,10 @@
           </ul>
           <!-- /.main-nav__stock-list stock-list -->
           <span class="main-nav__delivery">Бесплатная доставка по России</span>
-        </nav>
-        <!-- /.main-nav -->
-      </div>
+        </div>
+        <!-- /.main-nav__wrapper -->
+      </nav>
+      <!-- /.main-nav -->
     </header>
 
     <main class="page-main">
@@ -349,5 +359,6 @@
       </div>
       <!-- /.page-footer__wrapper -->
     </footer>
+    <script src="js/main-nav.js"></script>
   </body>
 </html>

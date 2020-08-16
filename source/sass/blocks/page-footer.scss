@@ -4,18 +4,21 @@
 
 .page-footer__wrapper {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  width: 260px;
+  max-width: 260px;
   padding: 0 30px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 668px;
+    flex-direction: row;
+    max-width: 668px;
     padding: 0 50px;
+    min-height: 143px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1050px;
+    max-width: 1050px;
     padding: 0 50px;
   }
 }
@@ -24,17 +27,15 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: inline-block;
+    display: block;
+    margin-bottom: 5px;
     margin-left: 0;
     margin-right: auto;
   }
 }
 
-.page-footer__copy {
-  margin: auto;
-
+.page-footer__social {
   @media (min-width: $tablet-width) {
-    margin-right: 0;
-    margin-left: auto;
+    margin-left: 77px;
   }
 }

@@ -9,18 +9,20 @@
 
   <body class="page-body">
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <nav class="main-nav">
-          <a class="main-nav__logo" href="index.html"
-            ><img
-              src="img/mishka-logo-mobile.svg"
-              alt="логотип интернет-магазина Мишка"
-              width="86"
-              height="35"
-          /></a>
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <a class="main-nav__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+              <img
+                src="img/mishka-logo-mobile.svg"
+                alt="логотип интернет-магазина Мишка"/>
+            </picture>
+          </a>
           <ul class="main-nav__site-list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="catalog.html">Каталог товаров</a>
@@ -33,12 +35,30 @@
           </ul>
           <!-- /.main-nav__site-list site-list -->
           <ul class="main-nav__user-list user-list">
-            <li class="user-list__item">
-              <a class="user-list__link" href="#">Поиск по сайту</a>
+            <li class="user-list__item user-list__item--search">
+              <img
+                class="user-list__icon user-list__icon--search"
+                src="img/icon-search.svg"
+                alt="Иконка"
+                width="17.6"
+                height="17.6"
+              />
+              <a class="user-list__link user-list__link--search" href="#"
+                >Поиск по сайту</a
+              >
             </li>
             <!-- /.user-list__item -->
-            <li class="user-list__item">
-              <a class="user-list__link" href="#">Корзина: пока пуста</a>
+            <li class="user-list__item user-list__item--cart">
+              <img
+                class="user-list__icon user-list__icon--cart"
+                src="img/icon-cart.svg"
+                alt="Иконка"
+                width="21"
+                height="18"
+              />
+              <a class="user-list__link user-list__link--cart" href="#"
+                >Корзина: пока пуста</a
+              >
             </li>
             <!-- /.user-list__item -->
           </ul>
@@ -55,9 +75,10 @@
           </ul>
           <!-- /.main-nav__stock-list stock-list -->
           <span class="main-nav__delivery">Бесплатная доставка по России</span>
-        </nav>
-        <!-- /.main-nav -->
-      </div>
+        </div>
+        <!-- /.main-nav__wrapper -->
+      </nav>
+      <!-- /.main-nav -->
     </header>
 
     <main class="page-main">
@@ -67,21 +88,35 @@
       <section class="promo">
         <div class="promo__wrapper">
           <h2 class="promo__title">
-            Милые штучки ручной <br />
+            Милые штуки ручной <br />
             работы для дома
           </h2>
           <ul class="promo__list">
-            <li class="promo__item">
-              <a class="promo__link promo__link--link-1" href="#"
+            <li class="promo__item promo__item--item-1">
+              <a class="promo__link" href="#"
                 >Предметы <br />
                 интерьера</a
               >
+              <img
+                class="promo__icon promo__icon--1"
+                src="img/icon-interior.svg"
+                alt="Иконка"
+                width="40"
+                height="62"
+              />
             </li>
-            <li class="promo__item">
-              <a class="promo__link promo__link--link-2" href="#"
+            <li class="promo__item promo__item--item-2">
+              <a class="promo__link" href="#"
                 >Детские <br />
                 игрушки</a
               >
+              <img
+                class="promo__icon promo__icon--2"
+                src="img/icon-toy.svg"
+                alt="Иконка"
+                width="60"
+                height="60"
+              />
             </li>
           </ul>
         </div>
@@ -90,7 +125,7 @@
       <!-- /.promo -->
       <section class="product-week">
         <div class="product-week__wrapper">
-          <h2 class="product-week__title">Вязанные корзинки</h2>
+          <h2 class="product-week__title">Вязаные&nbsp;корзинки</h2>
           <span class="product-week__subtitle">Товар недели</span>
           <div class="product-week__description-wrapper">
             <p class="product-week__description">
@@ -105,13 +140,15 @@
               <dt class="description-list__term">Высота:</dt>
               <dd class="description-list__definition">15 см</dd>
             </dl>
-            <img
-              class="product-week__img"
-              src="img/triple-set-mobile@1x.jpg"
-              alt="вязанные корзинки"
-              width="260"
-              height="315"
-            />
+            <picture class="product-week__picture">
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
+              <img
+                class="product-week__img"
+                src="img/triple-set-mobile@1x.jpg"
+                alt="вязанные корзинки"
+              />
+            </picture>
             <span class="product-week__price">Цена: 990 руб.</span>
             <button class="product-week__button button">Заказать</button>
           </div>
@@ -124,22 +161,64 @@
           <h2 class="about-company__title">Коротко о нас:</h2>
           <ul class="about-company__list">
             <li class="about-company__item about-company__item--item-1">
-              Экологически чистые материалы
+              <img
+                src="img/icon-feature-flower.svg"
+                alt="иконка"
+                class="about-company__img about-company__img--1"
+              />
+              <span class="about-company__text"
+                >Экологически чистые&nbsp;материалы</span
+              >
             </li>
             <li class="about-company__item about-company__item--item-2">
-              Скандинавский стиль по российской цене
+              <img
+                src="img/icon-feature-money.svg"
+                alt="иконка"
+                class="about-company__img about-company__img--2"
+              />
+              <span class="about-company__text"
+                >Скандинавский стиль по&nbsp;российской цене</span
+              >
             </li>
             <li class="about-company__item about-company__item--item-3">
-              Увеличивает лайки на фотографиях
+              <img
+                src="img/icon-feature-heart.svg"
+                alt="иконка"
+                class="about-company__img about-company__img--3"
+              />
+              <span class="about-company__text"
+                >Увеличивает лайки на&nbsp;фотографиях</span
+              >
             </li>
             <li class="about-company__item about-company__item--item-4">
-              Связано вручную с любовью и умилением
+              <img
+                src="img/icon-feature-ball.svg"
+                alt="иконка"
+                class="about-company__img about-company__img--4"
+              />
+              <span class="about-company__text"
+                >Связано вручную с любовью&nbsp;и&nbsp;умилением</span
+              >
             </li>
             <li class="about-company__item about-company__item--item-5">
-              Поддержка отечественного производителя
+              <img
+                src="img/icon-feature-rocket.svg"
+                alt="иконка"
+                class="about-company__img about-company__img--5"
+              />
+              <span class="about-company__text"
+                >Поддержка отечественного производителя</span
+              >
             </li>
             <li class="about-company__item about-company__item--item-6">
-              Поставляется в подарочной упаковке
+              <img
+                src="img/icon-feature-gift.svg"
+                alt="иконка"
+                class="about-company__img about-company__img--6"
+              />
+              <span class="about-company__text"
+                >Поставляется в подарочной&nbsp;упаковке</span
+              >
             </li>
           </ul>
         </div>
@@ -178,27 +257,32 @@
       <!-- /.reviews -->
       <section class="contacts">
         <div class="contacts__wrapper">
-          <h2 class="contacts__title">Контакты</h2>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <span class="contacts__name">e-mail:</span>
-              <span class="contacts__address"
-                ><a class="contacts__link" href="mailto:info@mimimishkashop.ru"
-                  >info@mimimishkashop.ru</a
-                ></span
-              >
-            </li>
-            <!-- /.contacts__item -->
-            <li class="contacts__item">
-              <span class="contacts__name">адрес:</span>
-              <span class="contacts__address"
-                >г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная,
-                д.&nbsp;19/8,&nbsp;офис&nbsp;101</span
-              >
-            </li>
-            <!-- /.contacts__item -->
-          </ul>
-          <!-- /.contacts__list -->
+          <div class="contacts__wrapper-element">
+            <h2 class="contacts__title">Контакты</h2>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <span class="contacts__name">e-mail:</span>
+                <span class="contacts__address"
+                  ><a
+                    class="contacts__link"
+                    href="mailto:info@mimimishkashop.ru"
+                    >info@mimimishkashop.ru</a
+                  ></span
+                >
+              </li>
+              <!-- /.contacts__item -->
+              <li class="contacts__item">
+                <span class="contacts__name">адрес:</span>
+                <span class="contacts__address"
+                  >г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная,
+                  д.&nbsp;19/8,&nbsp;офис&nbsp;101</span
+                >
+              </li>
+              <!-- /.contacts__item -->
+            </ul>
+            <!-- /.contacts__list -->
+          </div>
+          <!-- /.contacts__wrapper-element -->
           <iframe
             class="contacts__map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716070596!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1594982001428!5m2!1sru!2sru"
@@ -206,9 +290,11 @@
             aria-hidden="false"
             tabindex="0"
           ></iframe>
-          <button class="contacts__button button">Напишите нам</button>
+          <div class="contacts__wrapper-element">
+            <button class="contacts__button button">Напишите нам</button>
+          </div>
+          <!-- /.contacts__wrapper-element -->
         </div>
-        <!-- /.contacts__wrapper -->
       </section>
       <!-- /.contacts -->
     </main>
@@ -270,5 +356,6 @@
       </div>
       <!-- /.page-footer__wrapper -->
     </footer>
+    <script src="js/main-nav.js"></script>
   </body>
 </html>

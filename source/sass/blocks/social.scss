@@ -1,9 +1,22 @@
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80px;
+}
+
 .social__list {
   display: flex;
-  width: 141px;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
+}
+
+.social__item {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 21px;
 }
