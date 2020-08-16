@@ -11,8 +11,10 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    flex-direction: row;
     max-width: 668px;
     padding: 0 50px;
+    min-height: 143px;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,8 +27,15 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: inline-block;
+    display: block;
+    margin-bottom: 5px;
     margin-left: 0;
     margin-right: auto;
+  }
+}
+
+.page-footer__social {
+  @media (min-width: $tablet-width) {
+    margin-left: 77px;
   }
 }

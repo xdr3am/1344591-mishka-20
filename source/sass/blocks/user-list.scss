@@ -11,6 +11,7 @@
     flex-direction: row;
     margin-left: auto;
     margin-right: 0;
+    min-height: 89px;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,50 +20,62 @@
 }
 
 .user-list__item {
-  position: relative;
-  height: 79px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 79px;
   border-top: 1px solid #ececec;
-  box-sizing: border-box;
   cursor: pointer;
 
-  &:hover .user-list__icon,
-  &:focus .user-list__icon {
-    fill: $decoration-color;
-    opacity: 1;
+  @media (min-width: $tablet-width) {
+    border-left: 1px solid #e5e5e5;
   }
 
-  &:active .user-list__icon {
-    opacity: 0.3;
-  }
-
-  &:hover .user-list__link,
-  &:focus .user-list__link {
-    opacity: 0.6;
-  }
-
-  &:active .user-list__link {
-    opacity: 0.3;
+  &--search {
+    @media (min-width: $tablet-width) {
+      width: 83px;
+    }
   }
 }
 
 .user-list__icon {
-  position: absolute;
-  top: 29px;
-  left: calc(15px + 5%);
-  opacity: 0.2;
-  fill: #231f20;
+  display: block;
+
+  &--search {
+    margin-left: 32px;
+    margin-right: 26px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 33px;
+      margin-right: 31px;
+    }
+  }
+
+  &--cart {
+    margin-left: 30px;
+    margin-right: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 30px;
+      margin-right: 31px;
+    }
+  }
 }
 
 .user-list__link {
+  position: relative;
   display: inline-block;
-  width: 100%;
-  height: 100%;
   font-weight: bold;
+  width: 100%;
   font-size: 17px;
   line-height: 24px;
   color: $dark-color-text;
   text-decoration: none;
-  padding-top: 28.5px;
-  padding-left: 24%;
   box-sizing: border-box;
+
+  &--search {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
