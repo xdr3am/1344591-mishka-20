@@ -33,11 +33,15 @@
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: 350px 457px;
-    background-position: top left;
+    background-position: top left 50px;
     min-height: 457px;
+  }
+}
+
+.reviews__content {
+  @media (min-width: $desktop-width) {
     padding-top: 78px;
-    padding-left: 225px;
-    box-sizing: border-box;
+    padding-left: 175px;
   }
 }
 

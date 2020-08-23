@@ -2,7 +2,6 @@
   position: relative;
   min-height: 500px;
   padding-top: 44px;
-  box-sizing: border-box;
 
   &::before {
     content: "";
@@ -23,6 +22,10 @@
   @media (min-width: $desktop-width) {
     padding-top: 0;
     margin-bottom: 68px;
+
+    &::before {
+      display: none;
+    }
   }
 }
 
@@ -34,6 +37,18 @@
     padding-top: 170px;
     padding-left: 174px;
     margin: 0 auto;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50px;
+      width: 1050px;
+      height: 23px;
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat: repeat-x;
+      background-size: 100%;
+    }
   }
 }
 

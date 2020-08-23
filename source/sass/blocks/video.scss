@@ -1,11 +1,22 @@
 .video {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: 150px;
+  background-image: url("../../img/video-mobile@1x.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    height: 455px;
+    background-image: url("../../img/video-tablet@1x.jpg");
+    background-repeat: no-repeat;
+  }
 }
 
 .video__button {
-  position: absolute;
-  top: 37px;
-  left: 73px;
   border: none;
   outline: none;
   background-color: transparent;

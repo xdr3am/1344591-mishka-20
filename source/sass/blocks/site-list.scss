@@ -51,7 +51,6 @@
   line-height: 24px;
   color: $dark-color-text;
   text-decoration: none;
-  padding-top: 27px;
   padding-left: 76px;
   box-sizing: border-box;
 
@@ -61,7 +60,7 @@
     padding: 0;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     font-size: 17px;
     line-height: 24px;
   }
