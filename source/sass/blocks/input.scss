@@ -206,5 +206,14 @@
     line-height: 18px;
     color: $dark-color-text;
     opacity: 0.3;
+
+    @media (min-width: $tablet-width) {
+      font-size: 19px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 501px;
+    margin-top: -16px;
   }
 }

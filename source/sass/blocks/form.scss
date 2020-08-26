@@ -22,7 +22,7 @@
 
     &--name {
       padding-top: 70px;
-      padding-bottom: 52px;
+      padding-bottom: 49px;
     }
 
     &--tel {
@@ -33,6 +33,10 @@
     &--mail {
       padding-top: 0;
       padding-bottom: 50px;
+    }
+
+    &--textarea {
+      padding-bottom: 51px;
     }
   }
 
@@ -50,6 +54,9 @@
     @media (min-width: $tablet-width) {
       flex-direction: row-reverse;
       justify-content: space-between;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-bottom: 30px;
     }
   }
 }
@@ -141,8 +148,8 @@
 
     @media (min-width: $tablet-width) {
       grid-template-columns: 50% 50%;
-      row-gap: 57px;
-      column-gap: 10px;
+      row-gap: 58px;
+      column-gap: 11px;
       margin-bottom: 0;
     }
 
@@ -179,6 +186,10 @@
 
   &--textarea-list {
     margin-bottom: 12px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -198,4 +209,16 @@
   line-height: 16px;
   color: $base-color-text;
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    padding-top: 10px;
+  }
+}
+
+.form__button {
+  @media (min-width: $tablet-width) {
+    width: 230px;
+  }
 }
