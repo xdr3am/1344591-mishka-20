@@ -16,9 +16,18 @@
         <div class="main-nav__wrapper">
           <a class="main-nav__logo" href="index.html">
             <picture>
-              <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
-              <img src="img/mishka-logo-mobile.svg" alt="логотип интернет-магазина Мишка" />
+              <source
+                media="(min-width: 1150px)"
+                srcset="img/mishka-logo-desktop.svg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/mishka-logo-tablet.svg"
+              />
+              <img
+                src="img/mishka-logo-mobile.svg"
+                alt="логотип интернет-магазина Мишка"
+              />
             </picture>
           </a>
           <ul class="main-nav__site-list site-list">
@@ -34,15 +43,29 @@
           <!-- /.main-nav__site-list site-list -->
           <ul class="main-nav__user-list user-list">
             <li class="user-list__item user-list__item--search">
-              <img class="user-list__icon user-list__icon--search" src="img/icon-search.svg" alt="Иконка" width="17.6"
-                height="17.6" />
-              <a class="user-list__link user-list__link--search" href="#">Поиск по сайту</a>
+              <img
+                class="user-list__icon user-list__icon--search"
+                src="img/icon-search.svg"
+                alt="Иконка"
+                width="17.6"
+                height="17.6"
+              />
+              <a class="user-list__link user-list__link--search" href="#"
+                >Поиск по сайту</a
+              >
             </li>
             <!-- /.user-list__item -->
             <li class="user-list__item user-list__item--cart">
-              <img class="user-list__icon user-list__icon--cart" src="img/icon-cart.svg" alt="Иконка" width="21"
-                height="18" />
-              <a class="user-list__link user-list__link--cart" href="#">Корзина: пока пуста</a>
+              <img
+                class="user-list__icon user-list__icon--cart"
+                src="img/icon-cart.svg"
+                alt="Иконка"
+                width="21"
+                height="18"
+              />
+              <a class="user-list__link user-list__link--cart" href="#"
+                >Корзина: пока пуста</a
+              >
             </li>
             <!-- /.user-list__item -->
           </ul>
@@ -84,31 +107,37 @@
         >
           <div class="form__group">
             <div class="form__group-wrapper">
-              <span class="form__group-title">Тип</span>
-              <ul class="form__list">
-                <li class="form__item input">
+              <span class="form__group-title form__group-title--radio-title"
+                >Тип</span
+              >
+              <ul class="form__list form__list--radio-list">
+                <li class="form__item form__item--radio input">
                   <input
-                    class="input__input-radio"
+                    class="visually-hidden input__input-radio"
                     type="radio"
                     name="type-product"
                     id="accessory"
                     value="accessory"
                     checked
                   />
-                  <label class="input__label" for="accessory"
-                    >Аксессуар для интерьера</label
+                  <label
+                    class="input__label input__label--radio"
+                    for="accessory"
+                    ><span class="input__label-radio-text"
+                      >Аксессуар для интерьера</span
+                    ></label
                   >
                 </li>
                 <!-- /.form__item input -->
-                <li class="form__item input">
+                <li class="form__item form__item--radio input">
                   <input
-                    class="input__input-radio"
+                    class="visually-hidden input__input-radio"
                     type="radio"
                     name="type-product"
                     id="toy"
                     value="toy"
                   />
-                  <label class="input__label" for="toy"
+                  <label class="input__label input__label--radio" for="toy"
                     >Детская игрушка</label
                   >
                 </li>
@@ -121,78 +150,92 @@
           <!-- /.form__group -->
           <div class="form__group form__group--decoration">
             <div class="form__group-wrapper">
-              <span class="form__group-title">Цвет</span>
+              <span class="form__group-title form__group-title--checkbox-title"
+                >Цвет</span
+              >
               <ul class="form__list form__list--checkbox-list">
-                <li class="form__item input">
+                <li class="form__item form__item--checkbox input">
                   <input
-                    class="input__input-checkbox"
+                    class="visually-hidden input__input-checkbox"
                     type="checkbox"
                     name="color-white"
                     id="color-white"
                     checked
                   />
-                  <label class="input__label" for="color-white"
+                  <label
+                    class="input__label input__label--checkbox"
+                    for="color-white"
                     >Белый</label
                   >
                 </li>
                 <!-- /.form__item input -->
-                <li class="form__item input">
+                <li class="form__item form__item--checkbox input">
                   <input
-                    class="input__input-checkbox"
+                    class="visually-hidden input__input-checkbox"
                     type="checkbox"
                     name="color-gray"
                     id="color-gray"
                     checked
                   />
-                  <label class="input__label" for="color-gray"
+                  <label
+                    class="input__label input__label--checkbox"
+                    for="color-gray"
                     >Серый</label
                   >
                 </li>
                 <!-- /.form__item input -->
-                <li class="form__item input">
+                <li class="form__item form__item--checkbox input">
                   <input
-                    class="input__input-checkbox"
+                    class="visually-hidden input__input-checkbox"
                     type="checkbox"
                     name="color-tiffani"
                     id="color-tiffani"
                   />
-                  <label class="input__label" for="color-tiffani"
+                  <label
+                    class="input__label input__label--checkbox"
+                    for="color-tiffani"
                     >«Тиффани»</label
                   >
                 </li>
                 <!-- /.form__item input -->
-                <li class="form__item input">
+                <li class="form__item form__item--checkbox input">
                   <input
-                    class="input__input-checkbox"
+                    class="visually-hidden input__input-checkbox"
                     type="checkbox"
                     name="color-black"
                     id="color-black"
                   />
-                  <label class="input__label" for="color-black"
+                  <label
+                    class="input__label input__label--checkbox"
+                    for="color-black"
                     >Черный</label
                   >
                 </li>
                 <!-- /.form__item input -->
-                <li class="form__item input">
+                <li class="form__item form__item--checkbox input">
                   <input
-                    class="input__input-checkbox"
+                    class="visually-hidden input__input-checkbox"
                     type="checkbox"
                     name="color-pink"
                     id="color-pink"
                   />
-                  <label class="input__label" for="color-pink"
+                  <label
+                    class="input__label input__label--checkbox"
+                    for="color-pink"
                     >Розовый</label
                   >
                 </li>
                 <!-- /.form__item input -->
-                <li class="form__item input">
+                <li class="form__item form__item--checkbox input">
                   <input
-                    class="input__input-checkbox"
+                    class="visually-hidden input__input-checkbox"
                     type="checkbox"
                     name="color-orange"
                     id="color-orange"
                   />
-                  <label class="input__label" for="color-orange"
+                  <label
+                    class="input__label input__label--checkbox"
+                    for="color-orange"
                     >Оранжевый</label
                   >
                 </li>
@@ -204,11 +247,15 @@
           </div>
           <!-- /.form__group -->
           <div class="form__group">
-            <div class="form__group-wrapper">
-              <span class="form__group-title">ФИО</span>
-              <ul class="form__list">
-                <li class="form__item input">
-                  <label class="input__label" for="name">Имя:</label>
+            <div class="form__group-wrapper form__group-wrapper--name">
+              <span class="form__group-title form__group-title--name-title"
+                >ФИО</span
+              >
+              <ul class="form__list form__list--name-list">
+                <li class="form__item form__item--name input">
+                  <label class="input__label input__label--name" for="name"
+                    >Имя:</label
+                  >
                   <input
                     class="input__input-text"
                     type="text"
@@ -219,8 +266,8 @@
                   />
                 </li>
                 <!-- /.form__item input -->
-                <li class="form__item input">
-                  <label class="input__label" for="surname"
+                <li class="form__item form__item--name input">
+                  <label class="input__label input__label--name" for="surname"
                     >Фамилия:</label
                   >
                   <input
@@ -233,8 +280,10 @@
                   />
                 </li>
                 <!-- /.form__item input -->
-                <li class="form__item input">
-                  <label class="input__label" for="patronymic"
+                <li class="form__item form__item--name input">
+                  <label
+                    class="input__label input__label--name"
+                    for="patronymic"
                     >Отчество:</label
                   >
                   <input
@@ -253,16 +302,18 @@
           </div>
           <!-- /.form__group -->
           <div class="form__group form__group--decoration">
-            <div class="form__group-wrapper">
-              <span class="form__group-title">Тел</span>
-              <ul class="form__list">
+            <div class="form__group-wrapper form__group-wrapper--tel">
+              <span class="form__group-title form__group-title--tel-title"
+                >Тел</span
+              >
+              <ul class="form__list form__list--tel-list">
                 <li class="form__item input">
                   <input
                     class="input__input-tel"
                     type="tel"
                     name="tel"
                     id="tel"
-                    placeholder="+7 XXX XXX XX XX*"
+                    placeholder="+7 ХХХ ХХХ ХХ ХХ*"
                     pattern="+7[0-9]{10}"
                     required
                   />
@@ -276,9 +327,11 @@
           </div>
           <!-- /.form__group -->
           <div class="form__group form__group--decoration">
-            <div class="form__group-wrapper">
-              <span class="form__group-title">E-mail</span>
-              <ul class="form__list">
+            <div class="form__group-wrapper form__group-wrapper--mail">
+              <span class="form__group-title form__group-title--mail-title"
+                >E-mail</span
+              >
+              <ul class="form__list form__list--mail-list">
                 <li class="form__item input">
                   <input
                     class="input__input-mail"
@@ -299,8 +352,10 @@
           <!-- /.form__group -->
           <div class="form__group">
             <div class="form__group-wrapper">
-              <span class="form__group-title">Доп</span>
-              <ul class="form__list">
+              <span class="form__group-title form__group-title--textarea-title"
+                >Доп</span
+              >
+              <ul class="form__list form__list--textarea-list">
                 <li class="form__item input">
                   <textarea
                     class="input__textarea"
@@ -331,19 +386,41 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <img class="page-footer__logo" src="img/logo-footer.svg" alt="логотип интернет-магазина Мишка" />
+        <img
+          class="page-footer__logo"
+          src="img/logo-footer.svg"
+          alt="логотип интернет-магазина Мишка"
+        />
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link" href="#"><img src="img/icon-insta.svg" alt="instagram" width="22" height="21" /></a>
+              <a class="social__link" href="#"
+                ><img
+                  src="img/icon-insta.svg"
+                  alt="instagram"
+                  width="22"
+                  height="21"
+              /></a>
             </li>
             <!-- /.social__item -->
             <li class="social__item">
-              <a class="social__link" href="#"><img src="img/icon-fb.svg" alt="facebook" width="15" height="28" /></a>
+              <a class="social__link" href="#"
+                ><img
+                  src="img/icon-fb.svg"
+                  alt="facebook"
+                  width="15"
+                  height="28"
+              /></a>
             </li>
             <!-- /.social__item -->
             <li class="social__item">
-              <a class="social__link" href="#"><img src="img/icon-twitter.svg" alt="twitter" width="23" height="20" /></a>
+              <a class="social__link" href="#"
+                ><img
+                  src="img/icon-twitter.svg"
+                  alt="twitter"
+                  width="23"
+                  height="20"
+              /></a>
             </li>
             <!-- /.social__item -->
           </ul>
@@ -352,8 +429,13 @@
         <!-- /.page-footer__social social -->
         <div class="page-footer__copy copy">
           <span class="copy__text">Разработано</span>
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="copy__link"><img src="img/logo-htmlacademy.svg"
-              alt="логотип компании Html Academy" width="27" height="34" /></a>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="copy__link"
+            ><img
+              src="img/logo-htmlacademy.svg"
+              alt="логотип компании Html Academy"
+              width="27"
+              height="34"
+          /></a>
         </div>
         <!-- /.page-footer__copy copy -->
       </div>

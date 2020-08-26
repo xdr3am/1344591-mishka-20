@@ -17,6 +17,23 @@
     grid-template-columns: 25% 75%;
     width: 668px;
     padding: 0 50px;
+    padding-top: 66px;
+    padding-bottom: 69px;
+
+    &--name {
+      padding-top: 70px;
+      padding-bottom: 52px;
+    }
+
+    &--tel {
+      padding-top: 66px;
+      padding-bottom: 40px;
+    }
+
+    &--mail {
+      padding-top: 0;
+      padding-bottom: 50px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -28,6 +45,7 @@
   &--submit-button {
     display: flex;
     flex-direction: column;
+    margin-bottom: 55px;
 
     @media (min-width: $tablet-width) {
       flex-direction: row-reverse;
@@ -37,11 +55,58 @@
 }
 
 .form__group-title {
+  position: relative;
+  display: block;
   font-weight: bold;
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
   color: $decoration-color;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    left: 60px;
+    top: 9px;
+    background-color: $decoration-color;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--radio-title {
+    margin-bottom: 44px;
+  }
+
+  &--checkbox-title {
+    margin-bottom: 35px;
+  }
+
+  &--name-title {
+    margin-bottom: 30px;
+  }
+
+  &--tel-title {
+    margin-bottom: 7px;
+  }
+
+  &--mail-title {
+    margin-bottom: 6px;
+
+    &::after {
+      width: 182px;
+      top: 7px;
+      left: auto;
+      right: 0;
+    }
+  }
+
+  &--textarea-title {
+    margin-bottom: 24px;
+  }
 }
 
 .form__list {
@@ -52,20 +117,85 @@
   font-size: 17px;
   line-height: 18px;
   color: $dark-color-text;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  &--radio-list {
+    row-gap: 24px;
+    margin-bottom: 42px;
+
+    @media (min-width: $tablet-width) {
+      row-gap: 58px;
+      margin-bottom: -3px;
+    }
+  }
 
   &--checkbox-list {
+    row-gap: 43px;
+    margin-bottom: 44px;
+
     @media (min-width: $tablet-width) {
       grid-template-columns: 50% 50%;
+      row-gap: 57px;
+      column-gap: 10px;
+      margin-bottom: 0;
     }
 
     @media (min-width: $desktop-width) {
       grid-template-columns: 33% 33% 33%;
     }
   }
+
+  &--name-list {
+    row-gap: 25px;
+    margin-bottom: 35px;
+
+    @media (min-width: $tablet-width) {
+      row-gap: 42px;
+      margin-bottom: 0;
+    }
+  }
+
+  &--tel-list {
+    margin-bottom: 36px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &--mail-list {
+    margin-bottom: 33px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &--textarea-list {
+    margin-bottom: 12px;
+  }
+}
+
+.form__item--name {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: min-content 1fr;
+    column-gap: 25px;
+  }
 }
 
 .form__hint {
+  display: block;
   font-size: 14px;
   line-height: 16px;
   color: $base-color-text;
+  margin-bottom: 32px;
 }

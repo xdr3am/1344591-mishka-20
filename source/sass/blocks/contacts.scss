@@ -35,7 +35,6 @@
     max-width: 1050px;
     padding: 0 50px;
     padding-top: 170px;
-    padding-left: 174px;
     margin: 0 auto;
 
     &::before {
@@ -66,6 +65,7 @@
   @media (min-width: $desktop-width) {
     max-width: 1050px;
     padding: 0 50px;
+    padding-left: 174px;
   }
 }
 
@@ -90,7 +90,7 @@
       right: 52px;
       width: 47px;
       height: 81px;
-      background-image: url("../../img/icon-flag.svg");
+      background-image: url("../img/icon-flag.svg");
       background-repeat: no-repeat;
     }
   }
@@ -104,7 +104,7 @@
       content: "";
       position: absolute;
       top: -16px;
-      left: -61px;
+      left: 63px;
     }
   }
 }
