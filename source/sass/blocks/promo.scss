@@ -76,18 +76,18 @@
   @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
-    bottom: -20px;
+    bottom: -16px;
     left: 0;
     z-index: 10;
     width: 100%;
     height: 34px;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
-    background-size: 100%;
+    background-size: 768px 34px;
   }
 
-  @media (min-width: $tablet-width) {
-    bottom: -16px;
+  @media (min-width: $desktop-width) {
+    background-size: 1150px 34px;
   }
 }
 

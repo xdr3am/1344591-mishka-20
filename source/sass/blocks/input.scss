@@ -26,6 +26,11 @@
   margin-top: -7px;
 }
 
+.input__label-checkbox-text {
+  display: inline-block;
+  margin-top: 3px;
+}
+
 .input__input-radio + .input__label::before {
   content: "";
   position: absolute;
@@ -122,10 +127,16 @@
   @media (min-width: $tablet-width) {
     padding-top: 3px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin-right: 175px;
+  }
 }
 
 .input__input-tel {
   position: relative;
+  display: block;
   width: 100%;
   padding-top: 16px;
   padding-bottom: 18px;
@@ -135,17 +146,6 @@
   box-shadow: inset 0 -2px 0 #000000;
   background-color: transparent;
   box-sizing: border-box;
-
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   width: 25px;
-  //   height: 24px;
-  //   top: 0;
-  //   left: 0;
-  //   background-image: url("../img/icon-phone.svg");
-  //   background-repeat: no-repeat;
-  // }
 
   &::placeholder {
     font-size: 16px;
@@ -215,5 +215,9 @@
   @media (min-width: $tablet-width) {
     width: 501px;
     margin-top: -16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
   }
 }

@@ -44,6 +44,28 @@
     grid-template-columns: 17% 83%;
     width: 1050px;
     padding: 0 50px;
+    padding-top: 65px;
+    padding-bottom: 69px;
+
+    &--name {
+      padding-top: 66px;
+      padding-bottom: 52px;
+    }
+
+    &--tel {
+      padding-top: 69px;
+      padding-bottom: 42px;
+    }
+
+    &--mail {
+      padding-top: 0;
+      padding-bottom: 50px;
+    }
+
+    &--textarea {
+      padding-top: 70px;
+      padding-bottom: 46px;
+    }
   }
 
   &--submit-button {
@@ -57,6 +79,12 @@
       padding-top: 0;
       padding-bottom: 0;
       margin-bottom: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      box-sizing: border-box;
+      padding-left: 175px;
+      padding-right: 175px;
     }
   }
 }
@@ -114,6 +142,10 @@
   &--textarea-title {
     margin-bottom: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 60px;
+  }
 }
 
 .form__list {
@@ -130,6 +162,11 @@
   @media (min-width: $tablet-width) {
     font-size: 19px;
     line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -3px;
+    margin-top: -2px;
   }
 
   &--radio-list {
@@ -154,7 +191,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      grid-template-columns: 33% 33% 33%;
+      grid-template-columns: min-content min-content min-content;
+      column-gap: 97px;
     }
   }
 
@@ -165,6 +203,10 @@
     @media (min-width: $tablet-width) {
       row-gap: 42px;
       margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      row-gap: 43px;
     }
   }
 
@@ -200,6 +242,13 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: min-content 1fr;
     column-gap: 25px;
+  }
+}
+
+.form__item--tel,
+.form__item--mail {
+  @media (min-width: $desktop-width) {
+    margin-right: 175px;
   }
 }
 

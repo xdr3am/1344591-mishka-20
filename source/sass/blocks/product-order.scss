@@ -28,4 +28,10 @@
     margin-top: 65px;
     margin-bottom: 15px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 97px;
+    padding-left: 176px;
+    padding-right: 176px;
+  }
 }
