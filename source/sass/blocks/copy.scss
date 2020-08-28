@@ -3,8 +3,9 @@
   justify-content: center;
   align-items: center;
   border-top: 1px solid #e5e5e5;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 24px;
+  padding-bottom: 22px;
+  text-decoration: none;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -23,7 +24,15 @@
   margin-right: 29px;
 }
 
-.copy__link {
-  display: inline-block;
-  margin-top: 8px;
+.copy__img {
+  fill: #63d1bb;
+}
+
+.copy:hover .copy__img,
+.copy:focus .copy__img {
+  fill: #46c1ae;
+}
+
+.copy:active .copy__img {
+  opacity: 0.3;
 }

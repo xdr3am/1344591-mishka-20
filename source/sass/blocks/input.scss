@@ -237,6 +237,7 @@
   font-size: 17px;
   line-height: 18px;
   resize: none;
+  outline: none;
   padding: 15px;
 
   &::placeholder {
@@ -262,4 +263,9 @@
     width: 700px;
     margin-top: -18px;
   }
+}
+
+.input__textarea:focus,
+.input__textarea:hover {
+  border: 2px solid $decoration-color;
 }

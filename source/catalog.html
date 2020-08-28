@@ -16,9 +16,18 @@
         <div class="main-nav__wrapper">
           <a class="main-nav__logo" href="index.html">
             <picture>
-              <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
-              <img src="img/mishka-logo-mobile.svg" alt="логотип интернет-магазина Мишка" />
+              <source
+                media="(min-width: 1150px)"
+                srcset="img/mishka-logo-desktop.svg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/mishka-logo-tablet.svg"
+              />
+              <img
+                src="img/mishka-logo-mobile.svg"
+                alt="логотип интернет-магазина Мишка"
+              />
             </picture>
           </a>
           <ul class="main-nav__site-list site-list">
@@ -34,15 +43,29 @@
           <!-- /.main-nav__site-list site-list -->
           <ul class="main-nav__user-list user-list">
             <li class="user-list__item user-list__item--search">
-              <img class="user-list__icon user-list__icon--search" src="img/icon-search.svg" alt="Иконка" width="17.6"
-                height="17.6" />
-              <a class="user-list__link user-list__link--search" href="#">Поиск по сайту</a>
+              <img
+                class="user-list__icon user-list__icon--search"
+                src="img/icon-search.svg"
+                alt="Иконка"
+                width="17.6"
+                height="17.6"
+              />
+              <a class="user-list__link user-list__link--search" href="#"
+                >Поиск по сайту</a
+              >
             </li>
             <!-- /.user-list__item -->
             <li class="user-list__item user-list__item--cart">
-              <img class="user-list__icon user-list__icon--cart" src="img/icon-cart.svg" alt="Иконка" width="21"
-                height="18" />
-              <a class="user-list__link user-list__link--cart" href="#">Корзина: пока пуста</a>
+              <img
+                class="user-list__icon user-list__icon--cart"
+                src="img/icon-cart.svg"
+                alt="Иконка"
+                width="21"
+                height="18"
+              />
+              <a class="user-list__link user-list__link--cart" href="#"
+                >Корзина: пока пуста</a
+              >
             </li>
             <!-- /.user-list__item -->
           </ul>
@@ -68,37 +91,77 @@
     <main class="page-main">
       <section class="catalog">
         <div class="page-title">
-          <h1 class="page-title__text">
-            Каталог товаров
-          </h1>
+          <h1 class="page-title__text">Каталог товаров</h1>
         </div>
         <div class="catalog__wrapper">
           <ul class="catalog__list">
             <li class="catalog__item card">
-              <img
+              <picture class="card__image">
+                <source
+                  media="(min-width: 1150px)"
+                  srcset="
+                    img/photo-hare-desktop@1x.jpg 1x,
+                    img/photo-hare-desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/photo-hare-tablet@1x.jpg 1x,
+                    img/photo-hare-tablet@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="img/photo-hare-mobile@1x.jpg"
+                  srcset="img/photo-hare-mobile@2x.jpg 2x"
+                  alt="большая корзинка для игрушек"
+                />
+              </picture>
+
+              <!-- <img
                 class="card__image"
                 src="img/photo-hare-mobile@1x.jpg"
                 alt="зайчик-попрыгайчик"
-              />
+              /> -->
+
               <div class="card__description">
-                <h2 class="card__title">
-                  Зайчик-попрыгайчик
-                </h2>
+                <h2 class="card__title">Зайчик-попрыгайчик</h2>
                 <span class="card__specifications">Рост 30 см, вес 200 г</span>
                 <p class="card__price">1 200 руб.</p>
               </div>
             </li>
             <!-- /.catalog__item card -->
             <li class="catalog__item card">
-              <img
+              <picture class="card__image">
+                <source
+                  media="(min-width: 1150px)"
+                  srcset="
+                    img/photo-bowl-desktop@1x.jpg 1x,
+                    img/photo-bowl-desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/photo-bowl-tablet@1x.jpg 1x,
+                    img/photo-bowl-tablet@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="img/photo-bowl-mobile@1x.jpg"
+                  srcset="img/photo-bowl-mobile@2x.jpg 2x"
+                  alt="большая корзинка для игрушек"
+                />
+              </picture>
+
+              <!-- <img
                 class="card__image"
                 src="img/photo-bowl-mobile@1x.jpg"
                 alt="корзинка для белья"
-              />
+              /> -->
+
               <div class="card__description">
-                <h2 class="card__title">
-                  Корзинка для белья
-                </h2>
+                <h2 class="card__title">Корзинка для белья</h2>
                 <span class="card__specifications"
                   >Диаметр 15 см, высота 10 см</span
                 >
@@ -107,15 +170,36 @@
             </li>
             <!-- /.catalog__item card -->
             <li class="catalog__item card">
-              <img
+              <picture class="card__image">
+                <source
+                  media="(min-width: 1150px)"
+                  srcset="
+                    img/photo-toys-desktop@1x.jpg 1x,
+                    img/photo-toys-desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/photo-toys-tablet@1x.jpg 1x,
+                    img/photo-toys-tablet@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="img/photo-toys-mobile@1x.jpg"
+                  srcset="img/photo-toys-mobile@2x.jpg 2x"
+                  alt="большая корзинка для игрушек"
+                />
+              </picture>
+
+              <!-- <img
                 class="card__image"
                 src="img/photo-toys-mobile@1x.jpg"
                 alt="большая корзинка для игрушек"
-              />
+              /> -->
+
               <div class="card__description">
-                <h2 class="card__title">
-                  Большая корзинка для&nbsp;игрушек
-                </h2>
+                <h2 class="card__title">Большая корзинка для&nbsp;игрушек</h2>
                 <span class="card__specifications"
                   >Диаметр 30 см, высота 30 см</span
                 >
@@ -173,7 +257,7 @@
               По просьбам наших любимых фолловеров мы сняли для вас подробное
               видео о том, как появляются наши товары.
             </p>
-            <button class="production__button button">Сделать заказ</button>
+            <button class="production__button button"><span class="button__text">Сделать заказ</span></button>
           </div>
         </div>
         <!-- /.production__wrapper -->
@@ -183,19 +267,43 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <img class="page-footer__logo" src="img/logo-footer.svg" alt="логотип интернет-магазина Мишка" />
+        <a class="page-footer__logo" href="index.html">
+          <img
+            class="page-footer__img"
+            src="img/logo-footer.svg"
+            alt="логотип интернет-магазина Мишка"
+          />
+        </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link" href="#"><img src="img/icon-insta.svg" alt="instagram" width="22" height="21" /></a>
+              <a class="social__link" href="#"
+                ><img
+                  src="img/icon-insta.svg"
+                  alt="instagram"
+                  width="22"
+                  height="21"
+              /></a>
             </li>
             <!-- /.social__item -->
             <li class="social__item">
-              <a class="social__link" href="#"><img src="img/icon-fb.svg" alt="facebook" width="15" height="28" /></a>
+              <a class="social__link" href="#"
+                ><img
+                  src="img/icon-fb.svg"
+                  alt="facebook"
+                  width="15"
+                  height="28"
+              /></a>
             </li>
             <!-- /.social__item -->
             <li class="social__item">
-              <a class="social__link" href="#"><img src="img/icon-twitter.svg" alt="twitter" width="23" height="20" /></a>
+              <a class="social__link" href="#"
+                ><img
+                  src="img/icon-twitter.svg"
+                  alt="twitter"
+                  width="23"
+                  height="20"
+              /></a>
             </li>
             <!-- /.social__item -->
           </ul>
@@ -204,8 +312,13 @@
         <!-- /.page-footer__social social -->
         <div class="page-footer__copy copy">
           <span class="copy__text">Разработано</span>
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="copy__link"><img src="img/logo-htmlacademy.svg"
-              alt="логотип компании Html Academy" width="27" height="34" /></a>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="copy__link"
+            ><img
+              src="img/logo-htmlacademy.svg"
+              alt="логотип компании Html Academy"
+              width="27"
+              height="34"
+          /></a>
         </div>
         <!-- /.page-footer__copy copy -->
       </div>

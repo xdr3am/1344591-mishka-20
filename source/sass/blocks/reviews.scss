@@ -7,6 +7,10 @@
     background-repeat: no-repeat;
     background-size: 350px 457px;
     margin-bottom: 70px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -41,6 +45,10 @@
     background-size: 350px 457px cover;
     background-position: top left 50px;
     min-height: 379px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 }
 
