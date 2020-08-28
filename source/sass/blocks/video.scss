@@ -9,7 +9,8 @@
   background-repeat: no-repeat;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/video-mobile@2x.jpg");
+    background-image: url("../img/video-mobile@2x.jpg");
+    background-size: 260px auto;
   }
 
   @media (min-width: $tablet-width) {
@@ -20,6 +21,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/video-tablet@2x.jpg");
+      background-size: 668px auto;
     }
   }
 
@@ -31,6 +33,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/video-desktop@2x.jpg");
+      background-size: 662.65px auto;
     }
   }
 }
