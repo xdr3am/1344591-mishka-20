@@ -13,3 +13,21 @@
   background-color: #ffffff;
   cursor: pointer;
 }
+
+.button:hover,
+.button:focus {
+  background: linear-gradient(0deg, #444444, #444444);
+}
+
+.button:active {
+  background: linear-gradient(0deg, #444444, #444444);
+}
+
+.button:hover .button__text,
+.button:focus .button__text {
+  color: #ffffff;
+}
+
+.button:active .button__text {
+  opacity: 0.3;
+}

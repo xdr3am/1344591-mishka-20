@@ -1,50 +1,244 @@
+.input__label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+
+  &--radio {
+    padding-left: 60px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 80px;
+    }
+  }
+
+  &--checkbox {
+    padding-left: 62px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 82px;
+    }
+  }
+}
+
+.input__label-radio-text {
+  display: inline-block;
+  margin-top: -7px;
+}
+
+.input__label-checkbox-text {
+  display: inline-block;
+  margin-top: 3px;
+}
+
+.input__input-radio + .input__label::before {
+  content: "";
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  left: 0;
+  top: -12px;
+  border: 2px solid #444444;
+  border-radius: 50%;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 51px;
+    height: 51px;
+    top: -17px;
+    left: 2px;
+  }
+}
+
+.input__input-radio:checked + .input__label::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 1px;
+  left: 13px;
+  border-radius: 50%;
+  background-color: $decoration-color;
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 20px;
+    top: -1px;
+    left: 18px;
+  }
+}
+
+.input__input-checkbox + .input__label::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  border: 2px solid #444444;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 52px;
+    height: 52px;
+    top: -15px;
+  }
+}
+
+.input__input-checkbox:checked + .input__label::after {
+  content: "";
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  top: 1px;
+  left: 7px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: 7px;
+    left: 16px;
+    transform: scale(1.4);
+  }
+}
+
+.input__input-radio:hover + .input__label::before,
+.input__input-radio:focus + .input__label::before,
+.input__input-checkbox:hover + .input__label::before,
+.input__input-checkbox:focus + .input__label::before {
+  border: 2px solid $decoration-color;
+}
+
+.input__input-radio:active + .input__label::before,
+.input__input-checkbox:active + .input__label::before {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
 .input__input-text {
+  width: 100%;
+  font-size: 17px;
+  line-height: 18px;
+  padding-top: 19px;
+  padding-bottom: 13px;
   border: none;
   outline: none;
-  box-shadow: inset 0 -2px 0 #000000;
+  border-bottom: 2px solid #000000;
+  box-sizing: border-box;
 
   &::placeholder {
     font-size: 17px;
     line-height: 18px;
     color: $dark-color-text;
     opacity: 0.3;
+
+    @media (min-width: $tablet-width) {
+      font-size: 19px;
+      letter-spacing: 0.3px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 18px;
+    padding-top: 0;
+    padding-left: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin-right: 175px;
   }
 }
 
 .input__input-tel {
+  position: relative;
+  display: block;
+  width: 100%;
+  font-size: 17px;
+  line-height: 18px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  letter-spacing: -0.5px;
   border: none;
   outline: none;
-  box-shadow: inset 0 -2px 0 #000000;
+  border-bottom: 2px solid #000000;
   background-color: transparent;
+  box-sizing: border-box;
 
   &::placeholder {
-    font-size: 19px;
+    font-size: 16px;
     line-height: 18px;
     color: $dark-color-text;
     opacity: 0.3;
+
+    @media (min-width: $tablet-width) {
+      font-size: 19px;
+      letter-spacing: -1.2px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 18px;
+    padding-top: 3px;
+    padding-left: 17px;
   }
 }
 
 .input__input-mail {
+  width: 100%;
+  font-size: 17px;
+  line-height: 18px;
+  padding-top: 19px;
+  padding-bottom: 13px;
   border: none;
   outline: none;
-  box-shadow: inset 0 -2px 0 #000000;
+  border-bottom: 2px solid #000000;
   background-color: transparent;
+  box-sizing: border-box;
 
   &::placeholder {
     font-size: 17px;
     line-height: 18px;
     color: $dark-color-text;
     opacity: 0.3;
+
+    @media (min-width: $tablet-width) {
+      font-size: 19px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 18px;
+    padding-top: 3px;
+    padding-left: 17px;
   }
 }
+
+.input__input-text:hover,
+.input__input-text:focus,
+.input__input-text:active,
+.input__input-tel:hover,
+.input__input-tel:focus,
+.input__input-tel:active,
+.input__input-mail:hover,
+.input__input-mail:focus,
+.input__input-mail:active {
+  border-bottom: 2px solid $decoration-color;
+}
+
 
 .input__textarea {
   border: 2px solid #444444;
   box-sizing: border-box;
   width: 260px;
-  height: 100px;
+  height: 142px;
+  font-size: 17px;
+  line-height: 18px;
   resize: none;
+  outline: none;
+  padding: 15px;
 
   &::placeholder {
     font-family: "Open Sans", "Arial", sans-serif;
@@ -52,5 +246,26 @@
     line-height: 18px;
     color: $dark-color-text;
     opacity: 0.3;
+
+    @media (min-width: $tablet-width) {
+      font-size: 19px;
+    }
   }
+
+  @media (min-width: $tablet-width) {
+    width: 501px;
+    font-size: 19px;
+    line-height: 18px;
+    margin-top: -16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+    margin-top: -18px;
+  }
+}
+
+.input__textarea:focus,
+.input__textarea:hover {
+  border: 2px solid $decoration-color;
 }

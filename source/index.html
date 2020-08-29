@@ -16,11 +16,18 @@
         <div class="main-nav__wrapper">
           <a class="main-nav__logo" href="index.html">
             <picture>
-              <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+              <source
+                media="(min-width: 1150px)"
+                srcset="img/mishka-logo-desktop.svg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/mishka-logo-tablet.svg"
+              />
               <img
                 src="img/mishka-logo-mobile.svg"
-                alt="логотип интернет-магазина Мишка"/>
+                alt="логотип интернет-магазина Мишка"
+              />
             </picture>
           </a>
           <ul class="main-nav__site-list site-list">
@@ -141,16 +148,27 @@
               <dd class="description-list__definition">15 см</dd>
             </dl>
             <picture class="product-week__picture">
-              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
-              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
+              <source
+                media="(min-width: 1150px)"
+                srcset="img/triple-set-desktop@1x.jpg 1x"
+                srcset="img/triple-set-desktop@2x.jpg 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/triple-set-tablet@1x.jpg 1x"
+                srcset="img/triple-set-tablet@2x.jpg 2x"
+              />
               <img
                 class="product-week__img"
                 src="img/triple-set-mobile@1x.jpg"
+                srcset="img/triple-set-mobile@2x.jpg 2x"
                 alt="вязанные корзинки"
               />
             </picture>
             <span class="product-week__price">Цена: 990 руб.</span>
-            <button class="product-week__button button">Заказать</button>
+            <button class="product-week__button button">
+              <span class="button__text">Заказать</span>
+            </button>
           </div>
         </div>
         <!-- /.product-week__wrapper -->
@@ -227,32 +245,30 @@
       <!-- /.about-company -->
       <section class="reviews">
         <div class="reviews__wrapper">
-          <div class="reviews__content">
-            <h2 class="reviews__title">Отзывы</h2>
-            <p class="reviews__text">
-              Я молодая мама, но всё равно фотографии не набирали и близко такого
-              количества лайков, как у популярных инстамамочек. В отчаянии, я
-              накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали
-              более стильными, а также набирают больше лайков!
-            </p>
-            <div class="reviews__group-wrapper">
-              <div class="reviews__signature">
-                <p class="reviews__author">Анастасия Красильникова</p>
-                <span class="reviews__author-nickname">@misssssiskras</span>
-              </div>
-              <div class="reviews__nav">
-                <button
-                  class="reviews__nav-button reviews__nav-button--previous"
-                  aria-label="Назад"
-                ></button>
-                <button
-                  class="reviews__nav-button reviews__nav-button--next"
-                  aria-label="Вперед"
-                ></button>
-              </div>
-            </div>
+          <h2 class="reviews__title">Отзывы</h2>
+          <p class="reviews__text">
+            Я молодая мама, но всё равно фотографии не набирали и близко такого
+            количества лайков, как у популярных инстамамочек. В отчаянии, я
+            накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали
+            более стильными, а также набирают больше лайков!
+          </p>
+          <div class="reviews__signature">
+            <p class="reviews__author">Анастасия Красильникова</p>
+            <span class="reviews__author-nickname">@misssssiskras</span>
           </div>
-          <button class="reviews__button button">Написать</button>
+          <div class="reviews__nav">
+            <button
+              class="reviews__nav-button reviews__nav-button--previous"
+              aria-label="Назад"
+            ></button>
+            <button
+              class="reviews__nav-button reviews__nav-button--next"
+              aria-label="Вперед"
+            ></button>
+          </div>
+          <button class="reviews__button button">
+            <span class="button__text">Написать</span>
+          </button>
         </div>
         <!-- /.reviews__wrapper -->
       </section>
@@ -293,7 +309,9 @@
             tabindex="0"
           ></iframe>
           <div class="contacts__wrapper-element">
-            <button class="contacts__button button">Напишите нам</button>
+            <button class="contacts__button button">
+              <span class="button__text">Напишите нам</span>
+            </button>
           </div>
           <!-- /.contacts__wrapper-element -->
         </div>
@@ -303,11 +321,13 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <img
-          class="page-footer__logo"
-          src="img/logo-footer.svg"
-          alt="логотип интернет-магазина Мишка"
-        />
+        <a class="page-footer__logo" href="index.html">
+          <img
+            class="page-footer__img"
+            src="img/logo-footer.svg"
+            alt="логотип интернет-магазина Мишка"
+          />
+        </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">

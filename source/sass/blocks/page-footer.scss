@@ -8,18 +8,20 @@
   flex-wrap: wrap;
   max-width: 260px;
   padding: 0 30px;
+  padding-top: 15px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    align-items: center;
     max-width: 668px;
     padding: 0 50px;
-    min-height: 143px;
+    padding-top: 41px;
+    padding-bottom: 58px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1050px;
-    padding: 0 50px;
   }
 }
 
@@ -28,14 +30,15 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    margin-bottom: 5px;
     margin-left: 0;
     margin-right: auto;
+    margin-top: 7px;
   }
 }
 
-.page-footer__social {
+.page-footer__copy {
   @media (min-width: $tablet-width) {
-    margin-left: 77px;
+    margin-right: 0;
+    margin-left: auto;
   }
 }
