@@ -21,4 +21,13 @@
   line-height: 24px;
   color: $dark-color-text;
   text-decoration: none;
+
+  &:hover .stock-list__link-text,
+  &:focus .stock-list__link-text {
+    opacity: 0.6;
+  }
+
+  &:active .stock-list__link-text {
+    opacity: 0.3;
+  }
 }

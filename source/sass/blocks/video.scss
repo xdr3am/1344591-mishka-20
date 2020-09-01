@@ -43,9 +43,15 @@
   outline: none;
   background-color: transparent;
   cursor: pointer;
-  transition: transform 0.3s;
+  transition: transform 0.1s;
 
-  &:hover {
+  &:hover,
+  &:focus {
     transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
   }
 }
