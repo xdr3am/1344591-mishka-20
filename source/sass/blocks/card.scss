@@ -4,12 +4,12 @@
   width: 100%;
   cursor: pointer;
 
-  &:hover .card__description,
-  &:focus .card__description {
+  &:hover,
+  &:focus {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   }
 
-  &:active .card__description {
+  &:active {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 

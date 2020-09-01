@@ -68,13 +68,13 @@
   @media (min-width: $tablet-width) {
     font-size: 15px;
     line-height: 24px;
-    padding-left: 0;
-    padding-top: 33px;
-    padding-bottom: 31px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 17px;
     line-height: 24px;
+    padding-top: 33px;
+    padding-bottom: 31px;
   }
 }
