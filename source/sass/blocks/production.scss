@@ -32,6 +32,11 @@
   grid-template-columns: 1fr;
   border: 1px solid #ececec;
 
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
   @media (min-width: $desktop-width) {
     grid-template-columns: 682px 368px;
   }
