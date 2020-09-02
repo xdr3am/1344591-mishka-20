@@ -7,6 +7,15 @@
   padding-bottom: 22px;
   text-decoration: none;
 
+  &:hover .copy__img,
+  &:focus .copy__img {
+    fill: #46c1ae;
+  }
+
+  &:active .copy__img {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0;
     border: none;
@@ -26,13 +35,4 @@
 
 .copy__img {
   fill: #63d1bb;
-}
-
-.copy:hover .copy__img,
-.copy:focus .copy__img {
-  fill: #46c1ae;
-}
-
-.copy:active .copy__img {
-  opacity: 0.3;
 }

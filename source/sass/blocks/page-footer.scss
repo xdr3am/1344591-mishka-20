@@ -16,7 +16,7 @@
     align-items: center;
     max-width: 668px;
     padding: 0 50px;
-    padding-top: 41px;
+    padding-top: 47px;
     padding-bottom: 58px;
   }
 
@@ -27,6 +27,15 @@
 
 .page-footer__logo {
   display: none;
+
+  &:hover .page-footer__img,
+  &:focus .page-footer__img {
+    fill: #46c1ae;
+  }
+
+  &:active .page-footer__img {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     display: block;

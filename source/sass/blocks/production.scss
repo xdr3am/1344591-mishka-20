@@ -28,6 +28,7 @@
 }
 
 .production__container {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr;
   border: 1px solid #ececec;
@@ -43,7 +44,6 @@
 }
 
 .production__title {
-  position: relative;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
@@ -71,24 +71,22 @@
   }
 }
 
-.production__title::before {
-  content: "";
+.production__icon {
   position: absolute;
-  top: 8px;
+  z-index: 100;
+  top: 29px;
   left: 34px;
   width: 32px;
-  height: 27px;
-  background-image: url("../img/icon-video.svg");
-  background-repeat: no-repeat;
+  height: 32px;
 
   @media (min-width: $tablet-width) {
-    top: -9px;
+    top: 487px;
     left: 41px;
   }
 
   @media (min-width: $desktop-width) {
-    top: -53px;
-    left: 0;
+    top: 43px;
+    left: 760px;
   }
 }
 

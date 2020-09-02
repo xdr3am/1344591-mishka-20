@@ -135,29 +135,30 @@
 }
 
 .reviews__nav-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 130px;
   height: 52px;
   border: 1px solid #ececec;
   box-sizing: border-box;
   background-color: transparent;
+  cursor: pointer;
+
+  &:hover .reviews__nav-button-icon,
+  &:focus .reviews__nav-button-icon {
+    opacity: 0.6;
+  }
+
+  &:active .reviews__nav-button-icon {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     width: 87px;
     border: none;
     margin-top: 4px;
   }
-}
-
-.reviews__nav-button--previous {
-  background-image: url("../img/icon-left-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-.reviews__nav-button--next {
-  background-image: url("../img/icon-right-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 
 .reviews__button {
