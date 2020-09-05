@@ -1,4 +1,5 @@
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -7,6 +8,25 @@
   &:hover,
   &:focus {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:hover .card__title,
+  &:focus .card__title {
+    opacity: 0.6;
+  }
+
+  &:active .card__title {
+    opacity: 0.3;
+  }
+
+  &:hover .card__icon,
+  &:focus .card__icon {
+    opacity: 1;
+    fill: $decoration-color;
+  }
+
+  &:active .card__icon {
+    opacity: 0.3;
   }
 
   &:active {
@@ -110,20 +130,13 @@
   }
 }
 
-.card__price::after {
-  content: "";
+.card__icon {
   position: absolute;
-  right: -2px;
-  width: 20px;
-  height: 19px;
-  background-image: url("../img/icon-cart.svg");
-  background-repeat: no-repeat;
+  bottom: 32px;
+  right: 27px;
+  opacity: 0.2;
 
   @media (min-width: $tablet-width) {
-    right: 5px;
-  }
-
-  @media (min-width: $desktop-width) {
-    right: -2px;
+    right: 32px;
   }
 }
