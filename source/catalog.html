@@ -104,103 +104,118 @@
         </div>
         <div class="catalog__wrapper">
           <ul class="catalog__list">
-            <li class="catalog__item card button--to-order" tabindex="0">
-              <picture class="card__image">
-                <source
-                  media="(min-width: 1150px)"
-                  srcset="
-                    img/photo-hare-desktop@1x.jpg 1x,
-                    img/photo-hare-desktop@2x.jpg 2x
-                  "
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/photo-hare-tablet@1x.jpg 1x,
-                    img/photo-hare-tablet@2x.jpg 2x
-                  "
-                />
-                <img
-                  src="img/photo-hare-mobile@1x.jpg"
-                  srcset="img/photo-hare-mobile@2x.jpg 2x"
-                  alt="большая корзинка для игрушек"
-                />
+            <li class="catalog__item card">
+              <a class="card__link-image" href="#">
+                <picture>
+                  <source
+                    media="(min-width: 1150px)"
+                    srcset="
+                      img/photo-hare-desktop@1x.jpg 1x,
+                      img/photo-hare-desktop@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/photo-hare-tablet@1x.jpg 1x,
+                      img/photo-hare-tablet@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image"
+                    src="img/photo-hare-mobile@1x.jpg"
+                    srcset="img/photo-hare-mobile@2x.jpg 2x"
+                    alt="большая корзинка для игрушек"
+                  />
+              </a>
               </picture>
               <div class="card__description">
-                <h2 class="card__title">Зайчик-попрыгайчик</h2>
+                <a class="card__link-title" href="#">Зайчик-попрыгайчик</a>
                 <span class="card__specifications">Рост 30 см, вес 200 г</span>
                 <p class="card__price">1 200 руб.</p>
-                <svg class="card__icon" width="21" height="19">
-                  <use xlink:href="img/sprite.svg#icon-cart"></use>
-                </svg>
+                <button class="card__button-cart to-order">
+                  <svg class="card__button-icon" width="21" height="19">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  </svg>
+                </button>
               </div>
             </li>
             <!-- /.catalog__item card -->
-            <li class="catalog__item card button--to-order" tabindex="0">
-              <picture class="card__image">
-                <source
-                  media="(min-width: 1150px)"
-                  srcset="
-                    img/photo-bowl-desktop@1x.jpg 1x,
-                    img/photo-bowl-desktop@2x.jpg 2x
-                  "
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/photo-bowl-tablet@1x.jpg 1x,
-                    img/photo-bowl-tablet@2x.jpg 2x
-                  "
-                />
-                <img
-                  src="img/photo-bowl-mobile@1x.jpg"
-                  srcset="img/photo-bowl-mobile@2x.jpg 2x"
-                  alt="большая корзинка для игрушек"
-                />
-              </picture>
+            <li class="catalog__item card">
+              <a class="card__link-image" href="#">
+                <picture>
+                  <source
+                    media="(min-width: 1150px)"
+                    srcset="
+                      img/photo-bowl-desktop@1x.jpg 1x,
+                      img/photo-bowl-desktop@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/photo-bowl-tablet@1x.jpg 1x,
+                      img/photo-bowl-tablet@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image"
+                    src="img/photo-bowl-mobile@1x.jpg"
+                    srcset="img/photo-bowl-mobile@2x.jpg 2x"
+                    alt="большая корзинка для игрушек"
+                  />
+                </picture>
+              </a>
               <div class="card__description">
-                <h2 class="card__title">Корзинка для белья</h2>
+                <a class="card__link-title" href="#">Корзинка для белья</a>
                 <span class="card__specifications"
                   >Диаметр 15 см, высота 10 см</span
                 >
                 <p class="card__price">690 руб.</p>
-                <svg class="card__icon" width="21" height="19">
-                  <use xlink:href="img/sprite.svg#icon-cart"></use>
-                </svg>
+                <button class="card__button-cart to-order">
+                  <svg class="card__button-icon" width="21" height="19">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  </svg>
+                </button>
               </div>
             </li>
             <!-- /.catalog__item card -->
-            <li class="catalog__item card button--to-order" tabindex="0">
-              <picture class="card__image">
-                <source
-                  media="(min-width: 1150px)"
-                  srcset="
-                    img/photo-toys-desktop@1x.jpg 1x,
-                    img/photo-toys-desktop@2x.jpg 2x
-                  "
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/photo-toys-tablet@1x.jpg 1x,
-                    img/photo-toys-tablet@2x.jpg 2x
-                  "
-                />
-                <img
-                  src="img/photo-toys-mobile@1x.jpg"
-                  srcset="img/photo-toys-mobile@2x.jpg 2x"
-                  alt="большая корзинка для игрушек"
-                />
-              </picture>
+            <li class="catalog__item card">
+              <a class="card__link-image" href="#">
+                <picture>
+                  <source
+                    media="(min-width: 1150px)"
+                    srcset="
+                      img/photo-toys-desktop@1x.jpg 1x,
+                      img/photo-toys-desktop@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/photo-toys-tablet@1x.jpg 1x,
+                      img/photo-toys-tablet@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card__image"
+                    src="img/photo-toys-mobile@1x.jpg"
+                    srcset="img/photo-toys-mobile@2x.jpg 2x"
+                    alt="большая корзинка для игрушек"
+                  />
+                </picture>
+              </a>
               <div class="card__description">
-                <h2 class="card__title">Большая корзинка для&nbsp;игрушек</h2>
+                <a class="card__link-title" href="#">Большая корзинка для&nbsp;игрушек</a>
                 <span class="card__specifications"
                   >Диаметр 30 см, высота 30 см</span
                 >
                 <p class="card__price">1 500 руб.</p>
-                <svg class="card__icon" width="21" height="19">
-                  <use xlink:href="img/sprite.svg#icon-cart"></use>
-                </svg>
+                <button class="card__button-cart to-order">
+                  <svg class="card__button-icon" width="21" height="19">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  </svg>
+                </button>
               </div>
             </li>
             <!-- /.catalog__item card -->

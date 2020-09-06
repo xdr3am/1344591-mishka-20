@@ -1,11 +1,13 @@
-var toOrder = document.querySelector(".button--to-order");
+var toOrder = document.querySelectorAll(".to-order");
 var cart = document.querySelector(".modal-cart");
 var addToCart = document.querySelector(".modal-cart__button");
 
-toOrder.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  cart.classList.add("modal-cart--show");
-});
+for (var i = 0; i < toOrder.length; i++) {
+  toOrder[i].addEventListener("click", function (evt) {
+    evt.preventDefault();
+    cart.classList.add("modal-cart--show");
+  })
+};
 
 addToCart.addEventListener("click", function (evt) {
   evt.preventDefault();
