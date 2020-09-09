@@ -4,18 +4,17 @@ const sourcemap = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
-const csso = require("gulp-csso")
+const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const sync = require("browser-sync").create();
 
-// styles
+// Styles
 
 const styles = () => {
-  return gulp
-    .src("source/sass/style.scss")
+  return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
@@ -23,50 +22,15 @@ const styles = () => {
       autoprefixer()
     ]))
     .pipe(csso())
-    .pipe(rename("style.min.css"))
+    .pipe(rename("styles.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
-    .pipe(sync.stream());
+//     .pipe(sync.stream());
 }
 
 exports.styles = styles;
 
-// image
-
-const images = () => {
-  return gulp.src("source/img/**/*.{jpg,png,svg}")
-    .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 3}),
-      imagemin.mozjpeg({quality: 75, progressive: true}),
-      imagemin.svgo(),
-    ]))
-    .pipe(gulp.dest("source/img"));
-}
-
-exports.images = images;
-
-// webp
-
-const createWebp = () => {
-  return gulp.src("source/img/**/*{png,jpg}")
-    .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("source/img"))
-}
-
-exports.webp = createWebp;
-
-// svg-sprite
-
-const sprite = () => {
-  return gulp.src("source/img/**/icon-*.svg")
-    .pipe(svgstore())
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("source/img"))
-}
-
-exports.sprite = sprite;
-
-// server
+// Server
 
 const server = (done) => {
   sync.init({
@@ -92,3 +56,40 @@ const watcher = () => {
 exports.default = gulp.series(
   styles, server, watcher
 );
+
+// Imagemin
+
+const images = () => {
+  return gulp
+    .src("source/img/**/*.{jpg,png,svg}")
+    .pipe(
+      imagemin([
+        imagemin.mozjpeg({ quality: 75, progressive: true }),
+        imagemin.optipng({ optimizationLevel: 5 }),
+        imagemin.svgo()
+      ])
+    );
+}
+
+exports.images = images;
+
+// Webp
+
+const createWebp = () => {
+  return gulp.src("source/img/**/*.{jpg,png}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("source/img"))
+}
+
+exports.webp = createWebp;
+
+// Svg-sprite
+
+const sprite = () => {
+  return gulp.src("source/img/**/icon-*.svg")
+    .pipe(svgstore())
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"))
+}
+
+exports.sprite = sprite;
