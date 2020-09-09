@@ -3,30 +3,10 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  cursor: pointer;
 
   &:hover,
   &:focus {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  &:hover .card__title,
-  &:focus .card__title {
-    opacity: 0.6;
-  }
-
-  &:active .card__title {
-    opacity: 0.3;
-  }
-
-  &:hover .card__icon,
-  &:focus .card__icon {
-    opacity: 1;
-    fill: $decoration-color;
-  }
-
-  &:active .card__icon {
-    opacity: 0.3;
   }
 
   &:active {
@@ -43,7 +23,7 @@
   }
 }
 
-.card__image {
+.card__link-image {
   width: 260px;
   height: 195px;
 
@@ -78,7 +58,7 @@
   }
 }
 
-.card__title {
+.card__link-title {
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
@@ -86,6 +66,16 @@
   padding: 0;
   margin: 0;
   margin-bottom: 8px;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -130,13 +120,36 @@
   }
 }
 
-.card__icon {
+.card__button-cart {
   position: absolute;
-  bottom: 32px;
-  right: 27px;
-  opacity: 0.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  bottom: 28px;
+  right: 22px;
+  box-sizing: border-box;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover .card__button-icon,
+  &:focus .card__button-icon {
+    opacity: 1;
+    fill: $decoration-color;
+  }
+
+  &:active .card__button-icon {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
-    right: 32px;
+    right: 27px;
   }
+}
+
+.card__button-icon {
+  opacity: 0.2;
 }
