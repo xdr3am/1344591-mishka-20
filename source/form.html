@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/styles.min.css" />
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
   <body class="page-body">
@@ -329,13 +331,13 @@
                 <li class="form__item form__item--mail input">
                   <input
                     class="input__input-mail"
-                    type="mail"
-                    name="mail"
-                    id="mail"
+                    type="email"
+                    name="email"
+                    id="email"
                     placeholder="Ваш Email*"
                     required
                   />
-                  <label class="input__label" for="mail"></label>
+                  <label class="input__label" for="email"></label>
                 </li>
                 <!-- /.form__item input -->
               </ul>
@@ -357,7 +359,7 @@
                     id="text"
                     placeholder="Опишите все ваши пожелания к заказу"
                   ></textarea>
-                  <label class="input__label" for="textarea"></label>
+                  <label class="input__label" for="text"></label>
                 </li>
                 <!-- /.form__item input -->
               </ul>
