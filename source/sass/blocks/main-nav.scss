@@ -92,6 +92,11 @@
   display: none;
 }
 
+.main-nav--nojs .site-list__item,
+.main-nav--nojs .user-list__item {
+  display: flex;
+}
+
 .main-nav__wrapper {
   position: relative;
   margin: 0 auto;

@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Мишка</title>
-    <link rel="preload" href="fonts/opensans.woff2" as="fonts">
-    <link rel="preload" href="fonts/opensansbold.woff2" as="fonts">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" />
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
@@ -153,13 +153,17 @@
             <picture class="product-week__picture">
               <source
                 media="(min-width: 1150px)"
-                srcset="img/triple-set-desktop@1x.jpg 1x"
-                srcset="img/triple-set-desktop@2x.jpg 2x"
+                srcset="
+                  img/triple-set-desktop@1x.jpg 1x,
+                  img/triple-set-desktop@2x.jpg 2x
+                "
               />
               <source
                 media="(min-width: 768px)"
-                srcset="img/triple-set-tablet@1x.jpg 1x"
-                srcset="img/triple-set-tablet@2x.jpg 2x"
+                srcset="
+                  img/triple-set-tablet@1x.jpg 1x,
+                  img/triple-set-tablet@2x.jpg 2x
+                "
               />
               <img
                 class="product-week__img"
