@@ -1,3 +1,7 @@
+.input {
+  position: relative;
+}
+
 .input__label {
   position: relative;
   display: block;
@@ -216,6 +220,41 @@
   }
 }
 
+.input__icon {
+  position: absolute;
+  opacity: 0.2;
+
+  &--phone {
+    top: 13px;
+    right: 8px;
+
+    @media (min-width: $tablet-width) {
+      top: 2px;
+      right: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 3px;
+      right: 9px;
+    }
+  }
+
+  &--email {
+    top: 11px;
+    right: 4px;
+
+    @media (min-width: $tablet-width) {
+      top: 0;
+      right: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+      right: 4px;
+    }
+  }
+}
+
 .input__input-text:hover,
 .input__input-text:focus,
 .input__input-text:active,
@@ -228,6 +267,13 @@
   border-bottom: 2px solid $decoration-color;
 }
 
+.input__input-tel:hover + .input__icon,
+.input__input-tel:focus + .input__icon,
+.input__input-mail:hover + .input__icon,
+.input__input-mail:focus + .input__icon {
+  fill: $decoration-color;
+  opacity: 1;
+}
 
 .input__textarea {
   border: 2px solid #444444;

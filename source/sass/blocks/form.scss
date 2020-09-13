@@ -78,13 +78,14 @@
       justify-content: space-between;
       padding-top: 0;
       padding-bottom: 0;
-      margin-bottom: 30px;
+      margin-bottom: 51px;
     }
 
     @media (min-width: $desktop-width) {
       box-sizing: border-box;
       padding-left: 175px;
       padding-right: 175px;
+      margin-bottom: 51px;
     }
   }
 }
@@ -266,13 +267,12 @@
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
-    padding-top: 10px;
+    padding-top: 13px;
+    margin-bottom: 0;
   }
 }
 
 .form__button {
-  font-size: 17px;
-
   @media (min-width: $tablet-width) {
     width: 230px;
   }

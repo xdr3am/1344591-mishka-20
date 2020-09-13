@@ -81,6 +81,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  min-height: 103px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -88,6 +89,7 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: flex-end;
+    min-height: 124px;
   }
 }
 
@@ -106,6 +108,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    bottom: -16px;
     background-size: 1150px 34px;
   }
 }
@@ -162,7 +165,7 @@
     padding-left: 35px;
 
     &:hover {
-      transform: translateY(-5px);
+      min-height: 124px;
     }
   }
 }
